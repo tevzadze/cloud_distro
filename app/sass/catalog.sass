@@ -1,0 +1,51 @@
+.catalog
+	display: flex
+	flex-direction: column
+	&-main
+		display: flex
+		flex-direction: row
+	&-wrapper
+		display: flex
+		flex-direction: column
+		width: gem(940)
+		&-filter
+			display: flex
+			flex-direction: row
+			margin-bottom: gem(20)
+			margin-left: gem(40)
+			span
+				color: var(--colod-black)
+			img
+				margin: 0 gem(20) 0 gem(5)
+	&-products
+		display: flex
+		flex-wrap: wrap
+		.card
+			margin-left: gem(40)
+			margin-bottom: gem(40)
+.navigation
+	display: flex
+	width: 100%
+	height: gem(117)
+	flex-direction: column
+	background: var(--color-white)
+	h2
+		display: flex
+		margin: gem(30) 0 gem(15) gem(45)
+	div
+		display: flex
+		margin: 0 0 gem(30) gem(45)
+		img
+			margin: gem(0) gem(7)
+		a
+			color: #7D7D7D
+
+.filter
+	width: gem(237)
+	height: gem(350)
+	background: grey
+	margin: gem(26) 0 0 gem(45)
+.catalog_main .carousel-section
+	margin-bottom: gem(120)
+	h2
+		text-align: left
