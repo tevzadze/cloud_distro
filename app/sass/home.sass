@@ -79,3 +79,33 @@
 			background: var(--color-orange-light) center
 			width: gem(63)
 			justify-content: center
+.news
+	display: flex
+	flex-direction: row
+	height: gem(591)
+	&-left
+		display: flex
+		width: gem(780)
+		justify-content: flex-end
+		align-items: flex-end
+		background: var(--color-light-gray)
+		margin-right: gem(13)
+	&-right
+		display: flex
+		flex-direction: column
+		width: gem(560)
+		div:nth-child(2)
+			margin: gem(9) gem(0)
+	&-block
+		display: flex
+		height: gem(191)
+		justify-content: flex-end
+		align-items: flex-end	
+	&-title
+		display: flex
+		justify-content: center
+		align-items: center
+		width: gem(195)
+		height: gem(88)
+		background: var(--bg-light-gray)
+
