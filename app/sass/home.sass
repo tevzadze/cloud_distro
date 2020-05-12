@@ -1,0 +1,67 @@
+.card
+	width: gem(271)
+	height: gem(490)
+	display: flex
+	flex-direction: column
+	&-img
+		display: flex
+		width: 100%
+		height: gem(261)
+		padding: gem(6) gem(6) gem(0) gem(6)
+	&-name
+		display: flex
+		padding: gem(0) gem(20)
+		width: 100%
+		margin: gem(20) gem(0)
+	&-rate
+		display: flex
+		flex-direction: row
+		padding: gem(0) gem(20)
+		margin-bottom: gem(20)
+		div
+			display: flex
+			margin-right: gem(15)
+			img
+				width: gem(15)
+				height: gem(15)
+				margin: gem(0) gem(2.5)
+			img:first-child
+				margin-left: gem(0)
+			img:last-child
+				margin-right: gem(0)
+		span
+			display: flex
+	&-price
+		display: flex
+		margin-bottom: gem(8)
+		flex-direction: row
+		justify-content: space-between
+		padding: gem(0) gem(20)
+		div:first-child
+			display:flex
+			flex-direction: column
+			span
+				display: flex
+		div:last-child
+			display: flex
+			flex-direction: row
+			justify-content: center
+			align-items: center
+			img
+				display: flex
+				margin-right: gem(7)
+			span
+				display: flex
+				font-weight: 500
+
+	&-button
+		display: flex
+		flex-direction: row
+		height: gem(58)
+		div:first-child
+			display: flex
+			background: var(--color-orange)
+			width: gem(206)
+		div:last-child
+			display: flex
+			background: var(--color-orange-light)
