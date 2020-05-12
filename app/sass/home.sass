@@ -59,7 +59,7 @@
 					margin-left: gem(6)
 					font-size: gem(10)
 					text-decoration: none
-		div:last-child
+		.card-check
 			display: flex
 			flex-direction: row
 			justify-content: center
@@ -70,6 +70,23 @@
 			span
 				display: flex
 				font-weight: 500
+	.card-check-none
+		display: none
+	&.inactive
+		.card-check
+			display: none
+		.card-check-none
+			display: flex
+			flex-direction: row
+			justify-content: center
+			align-items: center
+			img
+				display: flex
+				margin-right: gem(7)
+			span
+				display: flex
+				font-weight: 500
+
 
 	&-button
 		display: flex
@@ -89,6 +106,27 @@
 			background: var(--color-orange-light) center
 			width: gem(63)
 			justify-content: center
+	&-button-none
+		display: none
+	&.inactive
+		.card-button
+			display: none
+		.card-button-none
+			display: flex
+			height: gem(58)
+			cursor: pointer
+			div
+				display: flex
+				background: var(--color-dark-gray)
+				width: gem(269)
+				justify-content: center
+				align-items: center
+				span
+					text-transform: uppercase
+
+
+
+
 .news
 	display: flex
 	flex-direction: row
