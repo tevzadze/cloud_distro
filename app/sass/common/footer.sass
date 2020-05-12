@@ -1,0 +1,65 @@
+.footer-content
+	background: var(--colod-black)
+	display: flex
+	padding: gem(120) gem(145)
+	justify-content: space-between
+	h2
+		margin-bottom: gem(30)
+		text-transform: uppercase
+	&-left
+		display: flex
+		div
+			margin-right: gem(100)
+			&:last-child
+				margin-right: 0
+		ul
+			display: flex
+			flex-direction: column
+			li
+				display: flex
+				margin-bottom: gem(10)
+				a:hover
+					text-decoration: underline
+	&-right
+		form
+			display: flex
+			flex-direction: column
+			position: relative
+			.footer-form-email
+				position: absolute
+				top: gem(10)
+				left: gem(20)
+			input
+				width: gem(307)
+				height: gem(50)
+				padding: gem(15) gem(20)
+				border: none
+				outline: none
+				padding-left: gem(66)
+				border-radius: gem(3)
+				font-weight: 500
+				&::-webkit-input-placeholder,
+				&::placeholder
+					font-weight: 300
+			button
+				width: gem(307)
+				margin-top: gem(16)
+				outline: none
+				border: none
+				border-radius: gem(3)
+				background: var(--color-orange)
+				height: gem(50)
+				display: flex
+				align-items: center
+				justify-content: center
+				cursor: pointer
+				span
+					text-transform: uppercase
+					
+			
+.bottom_line
+	background: #0D0D0D
+	text-align: center
+	padding: gem(20) 0
+	p
+		font-weight: 300
