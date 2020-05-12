@@ -95,7 +95,25 @@ input , textarea
 
 button[type='submit']
     cursor: pointer
-
+.owl-carousel
+    .owl-item
+        img
+            width: auto
+    .owl-nav.disabled
+        display: flex
+        position: absolute
+        top: gem(-45)
+        right: gem(10)
+        button
+            height: gem(30)
+            line-height: 0
+            display: flex
+            outline: none
+            span
+                font-size: gem(40)
+                line-height: gem(20)
+            &.owl-prev
+                margin-right: gem(20)
 @media only screen and (max-width : 1024px)
     .s-hidden
         display: none

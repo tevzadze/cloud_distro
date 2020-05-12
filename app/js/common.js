@@ -8,4 +8,10 @@ $(function() {
 		$('.more_contacts img').toggleClass('activeArrow');
 		$('.more_contacts-inner').removeClass('activeInfo');
 	} )
+
+	$('.last-watch-carousel').owlCarousel({
+	    loop:true,
+	    nav:true,
+	    items:4,
+	})
 });
