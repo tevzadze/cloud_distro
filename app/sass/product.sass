@@ -1,0 +1,127 @@
+.product
+	display: flex
+	flex-direction: column
+	div
+		display: flex
+	&-screen
+		display: flex
+		flex-direction: row
+		border: gem(1) solid #D0D0D0
+		margin: gem(30) gem(45) gem(40) gem(45)
+		&-left
+			display: flex
+			width: gem(606)
+			justify-content: center
+			border-right: gem(1) solid #D0D0D0
+			align-items: center
+			img
+				height: gem(304)
+		&-right
+			display: flex
+			flex-direction: column
+			width: gem(744)
+			&-top
+				display: flex
+				flex-direction: column
+				&-title
+					display: flex
+					flex-direction: column
+					margin: gem(40) 0 gem(20) gem(40)
+					h2
+						margin-bottom: gem(20)
+			&-bottom
+				border-top: gem(1) solid #D0D0D0
+	&-card-rate
+		display: flex
+		align-items: center
+		margin: gem(20) 0 gem(40) gem(40)
+		span
+			margin-left: gem(15)
+			color: var(--coror-grey-very-light)
+	&-card-stars
+		display: flex
+		img
+			width: gem(15)
+			height: gem(15)
+			margin: 0 gem(2.5)
+		img:first-child
+			margin-left: 0
+		img:last-child
+			margin-right: 0
+		&-price
+			p
+				font-size: gem(24)
+	&-price
+		margin: gem(40) 0 gem(40) gem(40)
+		display: flex
+		flex-direction: column
+		p
+			display: flex
+		&-main
+			margin-bottom: gem(40)
+		&-button
+			display: flex
+			align-items: center
+			background: var(--color-orange)
+			border-radius: gem(3)
+			span
+				color: var(--color-white)
+				text-transform: uppercase
+				padding: gem(10) gem(20)
+	&-feedback
+		display: flex
+		border: gem(1) solid #D0D0D0
+		margin: 0 gem(522) gem(120) gem(45)
+		flex-direction: column
+		width: gem(873)
+		&-info
+			display: flex
+			margin: gem(30) 0 gem(15) gem(30)
+			&-name
+				display: flex
+				margin-right: gem(30)
+				font-weight: 500 !important
+		&-massage
+			display: flex
+			margin: gem(15) 0 gem(30) gem(30)
+		&-button
+			display: flex
+			flex-direction: row
+			margin: 0 0 gem(40) gem(45)
+			span
+				color: var(--color-orange)
+				border: gem(1) solid #D0D0D0
+				border-bottom: none
+				padding: gem(30) gem(50)
+			div
+				border-bottom: gem(1) solid #D0D0D0
+				width: gem(675)
+.real_price
+	font-size: gem(24)
+	margin-right: gem(5)
+.number
+	display: flex
+	height: gem(35)
+	border: gem(1) solid #D0D0D0
+	border-radius: gem(3)
+	background: var(--bg-light-gray)
+	align-items: center
+	margin-right: gem(15)
+	input
+		width: gem(40)
+		border: none
+		text-align: center
+	span
+		font-size: gem(14)
+	.minus
+		width: gem(15)
+		height: gem(15)
+		margin: gem(10) gem(5)
+	.plus
+		width: gem(15)
+		height: gem(15)
+		margin: gem(10) gem(5)
+.carousel-section
+	margin-bottom: gem(120)
+	h2
+		text-transform: uppercase
