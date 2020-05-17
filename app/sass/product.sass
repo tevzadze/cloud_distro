@@ -8,14 +8,16 @@
 		flex-direction: row
 		border: gem(1) solid #D0D0D0
 		margin: gem(30) gem(45) gem(40) gem(45)
+		background: #fff
 		&-left
 			display: flex
 			width: gem(606)
 			justify-content: center
 			border-right: gem(1) solid #D0D0D0
 			align-items: center
+
 			img
-				height: gem(304)
+				height: 100%
 		&-right
 			display: flex
 			flex-direction: column
@@ -64,6 +66,10 @@
 			align-items: center
 			background: var(--color-orange)
 			border-radius: gem(3)
+			cursor: pointer
+			transition: all 0.3s ease
+			&:hover
+				background: #FF7F43
 			span
 				color: var(--color-white)
 				text-transform: uppercase
@@ -71,9 +77,11 @@
 	&-feedback
 		display: flex
 		border: gem(1) solid #D0D0D0
-		margin: 0 gem(522) gem(120) gem(45)
+		margin-left: gem(45)
 		flex-direction: column
 		width: gem(873)
+		background: #fff
+		margin-bottom: gem(20)
 		&-info
 			display: flex
 			margin: gem(30) 0 gem(15) gem(30)
@@ -111,8 +119,10 @@
 		width: gem(40)
 		border: none
 		text-align: center
+		background: none
 	span
 		font-size: gem(14)
+		cursor: pointer
 	.minus
 		width: gem(15)
 		height: gem(15)
