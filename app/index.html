@@ -359,7 +359,7 @@
                         </div>
                     </div>
                 </div>
-               <div class="card">
+                <div class="card">
                     <div class="card-img">
                         <img src="img/card_product.png" alt="Товар">
                     </div>
@@ -408,7 +408,7 @@
                 </div>
             </div>
         </section>
-                <section class="carousel-section">
+        <section class="carousel-section">
             <h2 class="title-h2">
                 НОВИНКИ
             </h2>
@@ -610,7 +610,6 @@
                 </div>
             </div>
         </section>
-
     </main>
     <footer>
         <div class="footer-content">
@@ -669,23 +668,55 @@
         </div>
     </footer>
     <div class="sign_in_form zoom-anim-dialog mfp-hide" id="sign_in_form">
-            <div class="sign_in_form-title title-h2">Вход</div>
-            <form action="">
-                <div class="sign_in_form-element">
-                   <span class="desc-2">Эл. почта или телефон</span>
-                   <input type="text" placeholder="example@gmail.com">
-                </div>
-                <div class="sign_in_form-element">
-                   <span class="desc-2">Пароль</span>
-                   <input type="text" placeholder="********">
-                </div>
-                <div class="sign_in_form-button">
-                    <button class="title-h3">Войти</button>
-                    <a href="#" class="desc-1">Зарегистрироваться</a>
-                </div>
-            </form>
-        </div>
-
+        <div class="sign_in_form-title title-h2">Вход</div>
+        <form action="">
+            <div class="sign_in_form-element">
+                <span class="desc-2">Эл. почта или телефон</span>
+                <input type="text" placeholder="example@gmail.com">
+            </div>
+            <div class="sign_in_form-element">
+                <span class="desc-2">Пароль</span>
+                <input type="text" placeholder="********">
+            </div>
+            <div class="sign_in_form-button">
+                <button class="title-h3">Войти</button>
+                <a href="#sign-up" class="desc-1 popup-with-zoom-anim">Зарегистрироваться</a>
+            </div>
+        </form>
+    </div>
+    <div class="sign_in_form zoom-anim-dialog mfp-hide" id="sign-up">
+        <div class="sign_in_form-title title-h2">Регистрация</div>
+        <form action="">
+            <div class="sign_in_form-element">
+                <span class="desc-2">Название магазина</span>
+                <input type="text" placeholder="Vape shop">
+            </div>
+            <div class="sign_in_form-element">
+                <span class="desc-2">Ваше имя</span>
+                <input type="text" placeholder="Михаил Иванов">
+            </div>
+            <div class="sign_in_form-element">
+                <span class="desc-2">Телефон</span>
+                <input type="text" placeholder="+38 (050) 111 11 11">
+            </div>
+            <div class="sign_in_form-element">
+                <span class="desc-2">Эл.почта</span>
+                <input type="text" placeholder="example@gmail.com">
+            </div>
+            <div class="sign_in_form-element">
+                <span class="desc-2">Придумайте пароль</span>
+                <input type="text" placeholder="********">
+            </div>
+            <div class="sign_in_form-info">
+                <span class="desc-2">Пароль должен быть не менее 6 символов, содержать цифры и латинские буквы, в том числе заглавные, и не должен совпадать с именем и эл. почтой</span>
+                <span class="desc-2">Регистрируясь, вы соглашаетесь с <a href="#">пользовательским соглашением</a></span>
+            </div>
+            <div class="sign_in_form-button">
+                <button class="title-h3">Зарегистрироваться</button>
+                <a href="#sign_in_form" class="desc-1 popup-with-zoom-anim">Я уже зарегистрирован</a>
+            </div>
+        </form>
+    </div>
     <script src="js/scripts.min.js"></script>
     <!-- include additional scripts here AFTER app scripts will run -->
 </body>
