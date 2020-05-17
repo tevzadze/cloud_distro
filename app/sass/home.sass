@@ -59,6 +59,10 @@
 					margin-left: gem(6)
 					font-size: gem(10)
 					text-decoration: none
+				&:last-child
+					span
+						text-decoration: none
+						
 		.card-check
 			display: flex
 			flex-direction: row
@@ -99,6 +103,9 @@
 			width: gem(206)
 			justify-content: center
 			align-items: center
+			transition: all 0.3s ease
+			&:hover
+				background: var(--color-orange-light)
 			span
 				text-transform: uppercase
 		div:last-child

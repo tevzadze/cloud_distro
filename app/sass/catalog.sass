@@ -8,6 +8,7 @@
 		display: flex
 		flex-direction: column
 		width: gem(940)
+		margin-top: gem(52)
 		&-filter
 			display: flex
 			flex-direction: row
@@ -42,9 +43,62 @@
 
 .filter
 	width: gem(237)
-	height: gem(350)
-	background: grey
+	// min-height: gem(350)
+	height: 100%
+	background: #fff
 	margin: gem(26) 0 0 gem(45)
+	border: 1px solid #D0D0D0
+	&-price
+		padding: gem(20)
+		border-bottom: 1px solid #D0D0D0
+	&-brand
+		padding: gem(20)
+		p
+			cursor: pointer
+			img
+				transition: all 0.3s ease
+		&.active
+			.filter-brand-wrapper
+				display: block
+			p
+				img
+					transform: rotate(180deg)
+		&-wrapper
+			margin-top: gem(20)
+			display: none
+			label
+				display: flex
+				margin-bottom: gem(10)
+				.checkbox
+					display: flex
+					width: gem(15)
+					height: gem(15)
+					background: #F4F4F4
+					border: 1px solid #D0D0D0
+					border-radius: 3px
+					transition: all 0.3s ease
+					margin-left: gem(-5)
+					margin-right: gem(10)
+					cursor: pointer
+				span
+					cursor: pointer
+				&:last-child
+					margin-bottom: 0
+				input
+					width: 0
+					opacity: 0
+					&:checked
+						opacity: 0
+						~ .checkbox
+							background: var(--color-orange)
+							border: 1px solid var(--color-orange)
+
+
+		p
+			display: flex
+			justify-content: space-between
+	.title-h2
+		font-weight: 300
 .catalog_main .carousel-section
 	margin-bottom: gem(120)
 	h2
