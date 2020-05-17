@@ -1,0 +1,146 @@
+.form
+	display: flex
+	flex-direction: column
+	margin-left: gem(45)
+	margin-bottom: gem(40)
+	form
+		display: flex
+		flex-direction: column
+		padding: gem(20)
+		border: gem(1) solid #D0D0D0
+		width: gem(540)
+	&-title
+		display: flex
+		font-weight: 500
+		margin-bottom: gem(30)
+	&-input
+		display: flex
+		flex-direction: column
+		input
+			border: gem(1) solid #D0D0D0
+			padding: gem(10) gem(17) gem(10) gem(17)
+			font-weight: 300
+			outline: none
+			border-radius: gem(3)
+			transition: all ease 0.375s
+			&:focus
+				border: gem(1) solid var(--colod-black)
+
+		&-element
+			display: flex
+			width: gem(500)
+			justify-content: space-between
+			margin-bottom: gem(20)
+			align-items: center
+			span
+				font-weight: 300
+				color: var(--coror-grey-very-light)
+	&-button
+		display: flex
+		justify-content: space-between
+		margin: gem(40) gem(105) 0 gem(105)
+		height: gem(50)
+		align-items: center
+		button
+			width: gem(161)
+			height: gem(50)
+			background: var(--color-orange)
+			border-radius: gem(3)
+			border: none
+			color: var(--color-white)
+			font-weight: 300
+			cursor: pointer
+		a
+			font-weight: 300
+			border-bottom: gem(1) solid #8A8A8A
+			color: var(--coror-grey-very-light)
+			line-height: gem(17)
+
+.sign_in_form
+	display: flex
+	flex-direction: column
+	margin-left: gem(45)
+	margin-bottom: gem(40)
+	width: gem(367)
+	padding: gem(20) gem(30) gem(20) gem(30)
+	border: gem(1) solid #D0D0D0
+	&-title
+		display: flex
+		font-weight: 500
+		margin-bottom: gem(20)
+	&-element
+		display: flex
+		flex-direction: column
+		margin-bottom: gem(20)
+		span
+			margin-bottom: gem(10)
+			font-weight: 300
+		input
+			height: gem(44)
+			border: gem(1) solid #D0D0D0
+			padding: gem(10) gem(17) gem(10) gem(17)
+			font-weight: 300
+			outline: none
+			border-radius: gem(3)
+			transition: all ease 0.375s
+			&:focus
+				border: gem(1) solid var(--colod-black)
+	&-button
+		display: flex
+		flex-direction: column
+		align-items: center
+		button
+			width: 100%
+			height: gem(50)
+			background: var(--color-orange)
+			border-radius: gem(3)
+			border: none
+			color: var(--color-white)
+			font-weight: 300
+			cursor: pointer
+		a
+			font-weight: 300
+			color: var(--coror-grey-very-light)
+			line-height: gem(17)
+			margin-top: gem(20)
+	&-info
+		display: flex
+		flex-direction: column
+		span:first-child
+			margin-bottom: gem(12)
+			font-weight: 300
+		span:last-child
+			margin-bottom: gem(35)
+			font-weight: 300
+			a
+				color: var(--color-orange)
+				font-weight: 300
+.thanks
+	display: flex
+	flex-direction: column
+	align-items: center
+	width: gem(464)
+	border: gem(1) solid #D0D0D0
+	margin-left: gem(45)
+	margin-bottom: gem(40)
+	span
+		display: flex
+		text-align: center
+	img
+		width: gem(62)
+		height: gem(62)
+		margin: gem(20) 0
+	span:last-child
+		margin: gem(40) 0 gem(20) 0
+		color: var(--coror-grey-very-light)
+		width: gem(352)
+	div
+		display: flex
+		align-items: center
+		margin: gem(20) 0 0 gem(80)
+		span
+			text-align: center
+		img
+			width: gem(24)
+			height: gem(24)
+			margin: 0 0 0 gem(48)
