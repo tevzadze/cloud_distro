@@ -1,14 +1,41 @@
+/* start state */
+.my-mfp-zoom-in .zoom-anim-dialog
+	opacity: 0
+	transition: all 0.2s ease-in-out 
+	transform: scale(0.8) 
+/* animate in */
+.my-mfp-zoom-in.mfp-ready .zoom-anim-dialog
+	opacity: 1
+	transform: scale(1) 
+/* animate out */
+.my-mfp-zoom-in.mfp-removing .zoom-anim-dialog
+	transform: scale(0.8) 
+	opacity: 0
+/* Dark overlay, start state */
+.my-mfp-zoom-in.mfp-bg
+	opacity: 0
+	transition: opacity 0.3s ease-out
+/* animate in */
+.my-mfp-zoom-in.mfp-ready.mfp-bg
+	opacity: 0.8
+/* animate out */
+.my-mfp-zoom-in.mfp-removing.mfp-bg
+	opacity: 0
+
+
+
 .form
 	display: flex
 	flex-direction: column
-	margin-left: gem(45)
-	margin-bottom: gem(40)
+	margin: auto
+	background: #fff
+	border: gem(1) solid #D0D0D0
+	width: gem(540)
+	padding: gem(20)
 	form
 		display: flex
 		flex-direction: column
-		padding: gem(20)
-		border: gem(1) solid #D0D0D0
-		width: gem(540)
+		// width: gem(540)
 	&-title
 		display: flex
 		font-weight: 500
@@ -23,6 +50,8 @@
 			outline: none
 			border-radius: gem(3)
 			transition: all ease 0.375s
+			width: gem(291)
+			background: #F4F4F4
 			&:focus
 				border: gem(1) solid var(--colod-black)
 
@@ -37,8 +66,9 @@
 				color: var(--coror-grey-very-light)
 	&-button
 		display: flex
-		justify-content: space-between
-		margin: gem(40) gem(105) 0 gem(105)
+		justify-content: center
+		// margin: auto
+		margin-top: gem(40)
 		height: gem(50)
 		align-items: center
 		button
@@ -50,20 +80,30 @@
 			color: var(--color-white)
 			font-weight: 300
 			cursor: pointer
-		a
+		span
 			font-weight: 300
 			border-bottom: gem(1) solid #8A8A8A
 			color: var(--coror-grey-very-light)
 			line-height: gem(17)
+			margin-left: gem(60)
+			cursor: pointer
+			transition: all 0.3s ease
+			position: relative
+			width: unset
+			height: unset
+			opacity: 1
+			padding: unset
+			&:hover
+				color: var(--color-dark-black)
 
 .sign_in_form
 	display: flex
 	flex-direction: column
-	margin-left: gem(45)
-	margin-bottom: gem(40)
+	margin: auto
 	width: gem(367)
 	padding: gem(20) gem(30) gem(20) gem(30)
 	border: gem(1) solid #D0D0D0
+	background: #fff
 	&-title
 		display: flex
 		font-weight: 500
@@ -103,6 +143,9 @@
 			color: var(--coror-grey-very-light)
 			line-height: gem(17)
 			margin-top: gem(20)
+			transition: all 0.3s ease
+			&:hover
+				color: var(--colod-black)
 	&-info
 		display: flex
 		flex-direction: column

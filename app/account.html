@@ -212,7 +212,7 @@
                             </div>
                             <div class="account-left-delivery">
                                 <span class="desc-2">Доставка (Самовывоз из Новой Почты)</span>
-                                <span class="desc-2 one-product-price" data-num="45" >45</span><span class="desc-2"> грн.</span>
+                                <span class="desc-2 one-product-price" data-num="45">45</span><span class="desc-2"> грн.</span>
                             </div>
                             <div class="account-left-total">
                                 <span class="desc-2">Итого к оплате</span>
@@ -220,7 +220,6 @@
                             </div>
                         </div>
                     </div>
-
                     <div class="account-left-table-right">
                         <div class="account-left-table-right-status">
                             <span class="desc-2">Статус заказа</span>
@@ -265,7 +264,7 @@
                             </div>
                             <div class="account-left-delivery">
                                 <span class="desc-2">Доставка (Самовывоз из Новой Почты)</span>
-                                <span class="desc-2 one-product-price" data-num="45" >45</span><span class="desc-2"> грн.</span>
+                                <span class="desc-2 one-product-price" data-num="45">45</span><span class="desc-2"> грн.</span>
                             </div>
                             <div class="account-left-total">
                                 <span class="desc-2">Итого к оплате</span>
@@ -273,7 +272,6 @@
                             </div>
                         </div>
                     </div>
-                    
                     <div class="account-left-table-right">
                         <div class="account-left-table-right-status">
                             <span class="desc-2">Статус заказа</span>
@@ -289,7 +287,6 @@
                         </div>
                     </div>
                 </div>
-            </div>
             </div>
             <div class="account-right">
                 <div class="account-right-title title-h2">Личные данные</div>
@@ -311,7 +308,7 @@
                         </div>
                     </div>
                     <div class="account-right-table-bottom">
-                        <a href="#" class="title-h3">Редактировать личные данные</a>
+                        <a href="#edit-form" class="title-h3 popup-with-zoom-anim">Редактировать личные данные</a>
                         <a href="#" class="title-h3">Выход</a>
                     </div>
                 </div>
@@ -374,6 +371,25 @@
             </p>
         </div>
     </footer>
+    <div class="form-edit form zoom-anim-dialog mfp-hide" id="edit-form">   
+            <div class="form-title title-h2">Редактирование личных данных</div>
+            <form action="">
+                <div class="form-input">
+                    <div class="form-input-element"><span class="title-h3">Название магазина</span><input class="title-h3" type="text" placeholder="Vape shop"></div>
+                    <div class="form-input-element"><span class="title-h3">Имя</span><input class="title-h3" type="text" placeholder="Михаил"></div>
+                    <div class="form-input-element"><span class="title-h3">Фамилия</span><input class="title-h3" type="text" placeholder="Иванов"></div>
+                    <div class="form-input-element"><span class="title-h3">Электронная почта</span><input class="title-h3" type="text" placeholder="example@gmail.com"></div>
+                    <div class="form-input-element"><span class="title-h3">Телефон</span><input class="title-h3" type="text" placeholder="+38 (050) 111 11 11"></div>
+                    <div class="form-input-element"><span class="title-h3">Город</span><input class="title-h3" type="text" placeholder="г. Киев"></div>
+                    <div class="form-input-element"><span class="title-h3">Адрес достаки</span><input class="title-h3" type="text" placeholder="ул. Хрещатик 44"></div>
+                    <div class="form-input-element"><span class="title-h3">Отделение НП</span><input class="title-h3" type="text" placeholder="6"></div>
+                </div>
+                <div class="form-button">
+                    <button class="title-h3">Сохранить</button>
+                    <span class="title-h3 mfp-close">Отмена</span>
+                </div>
+            </form>
+        </div>
     <script src="js/scripts.min.js"></script>
     <!-- include additional scripts here AFTER app scripts will run -->
 </body>

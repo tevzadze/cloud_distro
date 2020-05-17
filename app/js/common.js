@@ -15,7 +15,7 @@ $(function() {
         items: 4,
     })
     //card
-    $('.card').each(function () {
+    $('.card').each(function() {
         // console.log(this);
         var dataPrice = $(this).data('price');
         $(this).find('.real-price').text(dataPrice)
@@ -52,15 +52,26 @@ $(function() {
         onePrice.each(function() {
             sum += parseInt($(this).data('num'));
         })
-        $(this).each(function () {
+        $(this).each(function() {
             $(this).text(sum);
         })
     })
     //filter
-    $('.filter-brand p').on('click', function () {
+    $('.filter-brand p').on('click', function() {
         $('.filter-brand').toggleClass('active');
     })
 
-
+    //popup
+    $('.popup-with-zoom-anim').magnificPopup({
+        type: 'inline',
+        fixedContentPos: false,
+        fixedBgPos: true,
+        overflowY: 'auto',
+        closeBtnInside: true,
+        preloader: false,
+        midClick: true,
+        removalDelay: 300,
+        mainClass: 'my-mfp-zoom-in'
+    });
 
 });
