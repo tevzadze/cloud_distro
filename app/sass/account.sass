@@ -4,21 +4,49 @@
 	&-left
 		display: flex
 		flex-direction: column
+		&-main
+			display: none
 		&-title
 			font-weight: 500
 			padding: gem(60) 0 gem(30) gem(45)
 		&-info
 			display: flex
 			padding: gem(20) 0 gem(20) gem(20)
+			position: relative
+			cursor: pointer
 			img
 				margin-right: gem(10)
+				transition: all 0.2s ease
 			span
 				margin-right: gem(40)
 				font-weight: normal
+			.total-price
+				display: flex
+				position: absolute
+				right: 0
+				span
+					&:nth-child(1)
+						margin-right: gem(5)
 		&-table
+			background: #fff
 			display: flex
 			width: gem(796)
 			margin: 0 0 gem(40) gem(45)
+			&.active
+				.account-left-info
+					img
+						transform: rotate(180deg)
+				.account-left-main
+					display: block
+				.account-left-table-right
+					.account-left-table-right-status
+						span
+							&:nth-child(1)
+								display: unset
+					.account-left-table-right-screen
+						display: flex
+					.account-left-table-right-price
+						display: flex
 			&-left
 				display: flex
 				flex-direction: column
@@ -29,6 +57,7 @@
 				flex-direction: column
 				border: gem(1) solid #D0D0D0
 				border-left: none
+				width: gem(161)
 				&-status
 					display: flex
 					align-items: center
@@ -37,9 +66,13 @@
 					span
 						margin-bottom: gem(15)
 						font-weight: normal
+						&:nth-child(1)
+							display: none		
 				&-screen
 					display: flex
 					margin: gem(20) gem(12) 0 gem(12)
+					display: none
+					
 					span
 						font-size: gem(10)
 						font-weight: normal
@@ -48,6 +81,8 @@
 					flex-direction: column
 					align-items: center
 					margin: gem(30) 0 gem(27) 0
+					display: none
+						
 					span
 						margin-bottom: gem(15)
 						font-weight: normal
@@ -57,6 +92,8 @@
 			padding: gem(10) gem(40) gem(10) gem(40)
 			border-top: gem(1) solid #D0D0D0
 			height: gem(44)
+			position: relative
+			
 			&-img
 				display: flex
 				height: gem(24)
@@ -68,6 +105,11 @@
 				span
 					font-size: gem(9)
 					font-weight: normal
+					&:last-child
+						position: absolute
+						right: gem(40)
+					&:nth-child(3)
+						margin-right: gem(20)
 		&-delivery
 			display: flex
 			justify-content: space-between
@@ -75,8 +117,15 @@
 			padding: gem(10) gem(40) gem(10) gem(20)
 			border-top: gem(1) solid #D0D0D0
 			height: gem(44)
+			position: relative
 			span
 				font-weight: normal
+				&:last-child
+					position: absolute
+					right: gem(40)
+				&:nth-child(2)
+					margin-right: gem(25)
+					
 		&-total
 			display: flex
 			justify-content: space-between
@@ -84,8 +133,15 @@
 			padding: gem(10) gem(40) gem(10) gem(20)
 			border-top: gem(1) solid #D0D0D0
 			height: gem(44)
+			position: relative
+			
 			span
 				font-weight: normal
+				&:last-child
+					position: absolute
+					right: gem(40)
+				&:nth-child(2)
+					margin-right: gem(25)
 		&-bottom-info
 			display: flex
 			width: gem(796)
@@ -122,6 +178,7 @@
 			flex-direction: column
 			border: gem(1) solid #D0D0D0
 			width: gem(534)
+			background: #fff
 			&-top
 				display: flex
 				margin-bottom: gem(20)
@@ -151,4 +208,5 @@
 					margin: gem(20) 0 gem(20) gem(20)
 					color: var(--color-red)
 					font-weight: 300
+
 

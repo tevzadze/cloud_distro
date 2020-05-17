@@ -200,8 +200,12 @@ header
 				li
 					display: flex
 					background: #fff
-					border-bottom: 1px #DFDFDF solid
+					border: 1px #DFDFDF solid
+					border-top: none
 					position: relative
+					transition: all 0.3s ease
+					&:hover
+						background: #DFDFDF
 					a, p
 						width: 100%
 						padding: gem(20) gem(45)
