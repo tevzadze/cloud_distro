@@ -13,6 +13,23 @@ $(function() {
         loop: true,
         nav: true,
         items: 4,
+        responsive : {
+            1025 : {
+                items: 4
+            },
+            769 : {
+                items: 3,
+                center: true
+            },
+            480 : {
+                items: 2,
+                // center: true
+            },
+
+            0 : {
+                items: 1
+            }
+        }
     })
     //card
     $('.card').each(function() {

@@ -209,7 +209,47 @@ header
 					a, p
 						width: 100%
 						padding: gem(20) gem(45)
-							
+@media all and (max-width: 1024px)
+	.header_main-left
+		p
+			display: none
+@media all and (max-width: 768px)
+	header
+		.top-line
+			display: none
+		.categories
+			display: none
+		.header_main
+			padding: gem(10) gem(30)
+			&-left
+				img
+					width: gem(46)
+			&-right 
+				.header-card
+					margin-left: gem(30)
+					.cart-counter
+						width: gem(15)
+						height: gem(15)
+						font-size: gem(9)
+						top: gem(5)
+						right: gem(-8)
+						border: 3px var(--colod-black) solid
+					a
+						img
+							width: gem(20)
+							margin-bottom: gem(5)
+				form 
+					img
+						display: none
+						
+					input
+						height: gem(30)
+						padding: gem(8) gem(13)
+					button
+						height: gem(30)
+						font-size: gem(10)
+						line-height: gem(12)
+					
 
 				
 
