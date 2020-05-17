@@ -1,5 +1,5 @@
 $(function() {
-
+    //contacts info
     $('.more_contacts img').on('click', function() {
         $(this).toggleClass('activeArrow');
         $('.more_contacts-inner').toggleClass('activeInfo');
@@ -8,12 +8,19 @@ $(function() {
         $('.more_contacts img').toggleClass('activeArrow');
         $('.more_contacts-inner').removeClass('activeInfo');
     })
-
+    //sliders
     $('.last-watch-carousel').owlCarousel({
         loop: true,
         nav: true,
         items: 4,
     })
+    //card
+    $('.card').each(function () {
+        // console.log(this);
+        var dataPrice = $(this).data('price');
+        $(this).find('.real-price').text(dataPrice)
+    })
+
 
     //product
     $('.minus').click(function() {
@@ -49,7 +56,10 @@ $(function() {
             $(this).text(sum);
         })
     })
-
+    //filter
+    $('.filter-brand p').on('click', function () {
+        $('.filter-brand').toggleClass('active');
+    })
 
 
 
