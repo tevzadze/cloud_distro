@@ -5,17 +5,69 @@
 		display: flex
 		flex-direction: column
 		justify-content: center
+		margin: 0 gem(45)
+		border: gem(1) solid #D0D0D0
+		border-bottom: none
 		&-element
 			display: flex
 			align-items: center
 			height: gem(160)
-			img
-				display: flex
-				height: gem(74)
+			justify-content: space-between
+			border-bottom: gem(1) solid #D0D0D0
 			span
 				display: flex
-				margin-left: gem(20)
-			&-price
+			&-left
 				display: flex
-				flex-direction: column
+				align-items: center
+				img
+					display: flex
+					height: gem(74)
+					margin: 0 gem(20) 0 gem(1)
+			&-right
+				display: flex
+				width: gem(360)
+				margin-right: gem(40)
 				justify-content: space-between
+				align-items: center
+				&-price
+					display: flex
+					flex-direction: column
+					span:first-child
+						margin-bottom: gem(12)
+				&-counter
+					display: flex
+					flex-direction: column
+					align-items: center
+					.number
+						margin: 0
+					span
+						margin-top: gem(6)
+			&-end
+				display: flex
+				height: gem(160)
+				align-items: center
+				img
+					display: flex
+					width: gem(15)
+					height: gem(15)
+					margin: gem(30) 0 0 gem(20)
+					align-self: start
+	&-total
+		display: flex
+		justify-content: flex-end
+		align-items: center
+		margin-top: gem(45)
+		margin-bottom: gem(120)
+		span
+			display: flex
+			margin: 0 gem(40)
+		span:first-child
+			margin: 0
+		button
+			display: flex
+			margin-right: gem(45)
+			background: var(--color-orange)
+			padding: gem(10) gem(20)
+			border-radius: gem(3)
+			border: none
+			color: var(--color-white)
