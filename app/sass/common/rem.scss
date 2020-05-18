@@ -37,6 +37,9 @@
 @include remBase(1440, 0);
 
 @media all and (max-width: 1024px) {
+    @include remBase(1024, 0);
+}
+@media all and (max-width: 768px) {
     @include remBase(768, 0);
 }
 
