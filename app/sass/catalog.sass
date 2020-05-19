@@ -16,8 +16,11 @@
 			margin-left: gem(40)
 			span
 				color: var(--colod-black)
+				font-weight: normal
 			img
 				margin: 0 gem(20) 0 gem(5)
+			&-menu
+				display: none
 	&-products
 		display: flex
 		flex-wrap: wrap
@@ -104,3 +107,63 @@
 	h2
 		text-align: left
 		text-transform: uppercase 
+
+@media only screen and (max-width : 768px)
+	.filter
+		display: none
+		align-items: center
+	.catalog-wrapper
+		width: 100%
+		margin: 0
+		&-filter
+			align-items: center
+			margin-left: gem(30)
+	.catalog-wrapper-filter-menu
+		display: flex
+		width: gem(30)
+		height: gem(30)
+		padding: gem(7)
+		border: gem(1) solid #D0D0D0
+		border-radius: gem(1)
+		margin-right: gem(20)
+		img
+			margin: 0
+	.catalog_main .carousel-section
+		h2
+			text-align: center
+			font-size: var(--font-size-desc1)
+	.catalog-products
+		margin-left: gem(83)
+		.card
+			margin-left: gem(20)
+
+@media only screen and (max-width : 1024px)
+	.owl-carousel .owl-nav, .owl-carousel .owl-nav.disabled
+		margin-right: 0
+	.catalog_main .carousel-section
+		margin-bottom: gem(190)
+		align-items: center
+	.catalog-products .card
+		margin-bottom: gem(50)
+
+@media all and (max-width: 480px)
+	.catalog-wrapper-filter
+		margin-left: gem(15)
+	.catalog-products
+		margin-left: gem(15)
+		width: gem(290)
+	.catalog-products .card
+		margin-bottom: gem(40)
+		margin-left: 0
+		width: gem(290)
+	.card-button
+		div:first-child
+			width: gem(217)
+		div:last-child
+			width: gem(73)
+	.carousel-section
+		padding: 0
+		.owl-carousel .owl-nav
+			margin-right: gem(15)
+	.card
+		width: gem(290)

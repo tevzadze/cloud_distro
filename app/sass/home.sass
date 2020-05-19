@@ -97,6 +97,8 @@
 		flex-direction: row
 		height: gem(58)
 		cursor: pointer
+		img
+			width: gem(29)
 		div:first-child
 			display: flex
 			background: var(--color-orange)
@@ -235,6 +237,13 @@
 @media all and (max-width: 480px)
 	.home_main
 		padding: 0
+		.carousel-section
+			margin-bottom: gem(101)
+			padding: 0
+			padding: 0 gem(23)
+			h2
+				font-size: var(--font-size-desc1)
+				margin-bottom: gem(20)
 	footer
 		display: none
 	header
@@ -253,13 +262,14 @@
 			display: none
 		&-title
 			display: none
-	.carousel-section
-		margin: 0
-		padding: 0
-		padding: gem(23)
 	.owl
 		&-nav
-			display: none
+			display: flex
+			justify-content: flex-end
+			button
+				margin-left: gem(15)
+				width: gem(20)
+				height: gem(20)
 		&-dots
 			display: none
 	.catalog-tablet
@@ -272,4 +282,7 @@
 			padding: gem(12) gem(89)
 			color: var( --color-white)
 			background: var(--color-orange)
+	.owl-carousel .owl-item .card-button
+		img
+			width: gem(29)
 
