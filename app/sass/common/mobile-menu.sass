@@ -1,0 +1,79 @@
+.burger-menu
+	width: gem(25)
+	height: gem(20)
+	display: flex
+	flex-direction: column
+	justify-content: center
+	position: relative
+	span
+		display: block
+		content: ''
+		width: gem(25)
+		height: 1px
+		background: #fff
+		margin-top: gem(10)
+		&:after, &:before
+			content: ''
+			display: block
+			background: #fff
+			width: gem(25)
+			height: 1px
+			position: absolute
+
+		&:before
+			top: 0
+		&:after
+			bottom: 0
+
+.mobile-menu
+	display: flex
+	flex-direction: column
+	background: #F4F4F4
+	position: fixed
+	top: 0
+	width: 100%
+	min-height: 100vh
+	left: -100%
+	transition: all 0.3s ease
+	z-index: 9
+	&.active
+		left: 0
+	&-top
+		display: flex
+		flex-direction: row
+		justify-content: space-between
+		background: var(--colod-black)
+		height: gem(55)
+		align-items: center
+		padding: 0 gem(15)
+		.logo_mobile
+			width: gem(46)
+			// height: gem(14)
+		.close_mobile
+			width: gem(20)
+	&-content
+		&-child
+			padding: 0 gem(15)
+			border-top: 1px solid #D0D0D0
+			display: flex
+			flex-direction: column
+			padding-top: gem(40)
+			align-items: flex-start
+			a
+				font-size: gem(14)
+				line-height: gem(16)
+				display: flex
+				align-items: center
+				color: #202020
+				text-decoration: none
+				padding-bottom: gem(40)
+				width: auto
+				img
+					margin-right: gem(15)
+					width: gem(17)
+				
+
+
+
+
+

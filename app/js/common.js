@@ -27,6 +27,34 @@ $(function() {
             },
         }
     })
+    //mobile menu
+    $('.burger-menu, .close_mobile').click(function () {
+        $('.mobile-menu').toggleClass('active');
+        $('.categories').removeClass('active');
+        $('body').toggleClass('mobile-menu-open')
+    });
+
+    $('.categories-mobile, .cat-back').click(function () {
+       event.preventDefault();
+       $('.categories').toggleClass('active');
+
+    })
+
+    //categories dropdown
+    if ($(window).width() > 768) {
+        $('.categories-cat').hover(function () {
+            $(this).toggleClass('active')
+        })
+    }
+    else {
+        $('.categories-cat a').click(function () {
+            $(this).parent('.categories-cat').toggleClass('active')
+        })
+        $('.cat-link').click(function () {
+            event.preventDefault();
+        })
+    }
+    
     //card
     $('.card').each(function() {
         var dataPrice = $(this).data('price');
@@ -85,5 +113,123 @@ $(function() {
         removalDelay: 300,
         mainClass: 'my-mfp-zoom-in'
     });
+
+
+
+
+    // displayChange
+
+    $('.cart_2').fadeOut(0);
+    $('.cart-delivery').fadeOut(0);
+    $('.moneyOption').fadeOut(0);
+    $('.widget').fadeOut(0);
+
+    const firstStep = $('.cart-deliveryCaption');
+    const secondStep = $('.cart-formCaption');
+    const thirdStep = $('.cart-requisitesCaption');
+    let secondStepFin = $('.forCart-delivery');
+    var nextToDelivery = function(){
+        $('.cart-form').fadeOut(0);
+        $('.forCart-form').fadeOut(0);
+        $('.cart-delivery').fadeIn(300);
+        $(firstStep).addClass('active');
+        $(secondStep).removeClass('active');
+    }
+
+    $('.cartButton').on('click', function(){
+        $('.basket').fadeOut(0);
+        $(secondStepFin).fadeOut(0);
+        $('.cart_2').fadeIn(500);
+        $('.navigationChange').text('Оформление заказа');
+    });
+
+    $('.backButton').on('click', function(){
+        $('.basket').fadeIn(500);
+        $(secondStepFin).fadeOut(0);
+        $('.cart_2').fadeOut(0);
+        $('.navigationChange').text('Корзина');
+    })
+
+    $('.formButton, .cart-deliveryCaption').on('click', nextToDelivery);
+
+    $(secondStep).on('click', function(){
+        $('.cart-form').fadeIn(300);
+        $('.forCart-form').fadeIn(300);
+        $('.cart-delivery').fadeOut(0);
+        $(secondStepFin).fadeOut(0);
+        $(firstStep).removeClass('active');
+        $(secondStep).addClass('active');
+        $('.widget').fadeOut(0);
+        $(firstStep).removeClass('max');
+        $(thirdStep).removeClass('active');
+    })
+
+    $('.cart-form-input').on('keyup', function(){
+        let test = $('.cart-form-input-element').find('input');
+        let count = 0;
+        for (var i = test.length - 1; i >= 0; i--) {
+              var testt =  $(test[i]).val();  
+               if($(test[i]).val() != ''){
+                count++;
+               } else   {
+                count--;
+               }
+               if (count == 8){
+                 $(secondStep).addClass('max');
+               } else {
+                $(secondStep).removeClass('max');
+               }
+           }   
+    })
+
+
+    $('.control').on('click', function(){
+        let prop1 = $("#cloudDistro").prop("checked");
+        let prop2 = $("#cash").prop("checked");
+        $('.widget').fadeOut(0);
+        $(firstStep).removeClass('max');
+        $(thirdStep).removeClass('active');
+
+        if (prop1) {
+            $('.cashOnDelivery').fadeOut(0);
+            $('.moneyOption').fadeIn(300);
+        } else {
+            $('.cashOnDelivery').fadeIn(300);
+            $('.moneyOption').fadeOut(0);
+        }
+        if (prop2 && prop1) {
+            $(secondStepFin).fadeIn(300);
+            $('.deliveryButton').fadeOut(0);
+            $(thirdStep).fadeOut(0);
+        } else {
+            $(secondStepFin).fadeOut(300);
+            $('.deliveryButton').fadeIn(300);
+            $(thirdStep).fadeIn(300);
+        }
+    })
+
+    $('.deliveryButton').on('click', function(){
+        var test = $('input:radio[name=delivery]');
+        if ($(test[0]).prop("checked") || $(test[1]).prop("checked") || $(test[2]).prop("checked") == true){
+            $('.widget').fadeIn(300);
+            $(firstStep).addClass('max');
+            $(thirdStep).addClass('active');
+        }
+    })
+
+
+if (document.documentElement.clientWidth < 480){
+   $('.accordion').slideUp();
+   $('.accordionTrigger').on('click', function(e){
+    let dropDown = $(this).closest('div').find('ul');
+    let rotate = $(this).find('img');
+    $('.accordion').not(dropDown).slideUp();
+    $('.arrowFooter').not(rotate).removeClass('activeArrow');
+    $(rotate).toggleClass('activeArrow');
+    dropDown.slideToggle();
+
+        e.preventDefault();
+   })
+}
 
 });
