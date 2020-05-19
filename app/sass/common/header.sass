@@ -185,7 +185,7 @@ header
 				.cat-back
 					img
 						transform: unset
-						
+
 			a
 				height: 100%
 				display: flex
@@ -300,7 +300,29 @@ header
 						height: gem(30)
 						font-size: gem(10)
 						line-height: gem(12)
-					
+@media all and (max-width: 768px)
+	header
+		.header_main
+			padding: gem(10) gem(15)
+			justify-content: flex-start
+			&-left
+				img
+					display: none
+				.burger-menu
+					margin-right: gem(30)
+			&-right
+				form 
+					input
+						width: gem(140)
+					button
+						padding: 0 gem(10)
+				.header-card
+					margin-left: gem(20)
+		.categories-cat 
+			a
+				padding: 0 gem(15)
+	header .categories-cat-dropdown li a, header .categories-cat-dropdown li p
+		padding: gem(20) gem(0)
 
 				
 
