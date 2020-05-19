@@ -89,6 +89,10 @@
         </div>
         <div class="header_main">
             <div class="header_main-left">
+                <div class="burger-menu">
+                    <span></span>
+                </div>
+
                 <img src="img/logo.png" alt="Cloud Distro ">
                 <p class="desc-1 white">
                     Оптовый Интернет-магазин Cloud Distro
@@ -114,7 +118,13 @@
         </div>
         <div class="categories">
             <div class="categories-cat">
-                <a href="#" class="title-h3">
+                <a href="#" class="title-h3 cat-link cat-back">
+                    <img src="img/back.png" alt="">
+                    Назад
+                </a>
+            </div>
+            <div class="categories-cat">
+                <a href="#" class="title-h3 cat-link">
                     Устройства
                     <img src="img/arrow_black.svg" alt="">
                 </a>
@@ -124,7 +134,7 @@
                 </ul>
             </div>
             <div class="categories-cat">
-                <a href="#" class="title-h3">
+                <a href="#" class="title-h3 cat-link">
                     Картриджи
                     <img src="img/arrow_black.svg" alt="">
                 </a>
@@ -144,7 +154,7 @@
                 </ul>
             </div>
             <div class="categories-cat">
-                <a href="#" class="title-h3">
+                <a href="#" class="title-h3 cat-link">
                     Жидкости
                     <img src="img/arrow_black.svg" alt="">
                 </a>
@@ -157,7 +167,7 @@
                 </ul>
             </div>
             <div class="categories-cat">
-                <a href="#" class="title-h3">
+                <a href="#" class="title-h3 cat-link">
                     Аксессуары
                     <img src="img/arrow_black.svg" alt="">
                 </a>
@@ -612,45 +622,51 @@
             </div>
         </section>
     </main>
-    <footer>
+        <footer>
         <div class="footer-content">
             <div class="footer-content-left">
-                <div>
-                    <h2 class="title-h2 white">
+                <div class="accordionFather">
+                    <h2 class="title-h2 white accordionTrigger">
                         Мой аккаунт
+                        <img src="img/arrow_red.svg" alt="" class="arrowFooter">
                     </h2>
-                    <ul>
+                    <ul class="accordion">
                         <li><a href="#" class="desc-1 white">Вход</a></li>
                         <li><a href="#" class="desc-1 white">Регистрация</a></li>
                         <li><a href="#" class="desc-1 white">Заказы</a></li>
                     </ul>
                 </div>
                 <div>
-                    <h2 class="title-h2 white">
+                    <h2 class="title-h2 white accordionTrigger">
                         О магазине
+                        <img src="img/arrow_red.svg" class="arrowFooter" alt="">
                     </h2>
-                    <ul>
+                    <ul class="accordion">
                         <li><a href="#" class="desc-1 white">Главная</a></li>
                         <li><a href="#" class="desc-1 white">Доствака</a></li>
                         <li><a href="#" class="desc-1 white">Оплата</a></li>
                     </ul>
                 </div>
                 <div>
-                    <h2 class="title-h2 white">
+                    <h2 class="title-h2 white accordionTrigger">
                         Каталог
+                        <img src="img/arrow_red.svg" alt="" class="arrowFooter">
                     </h2>
-                    <ul>
+                    <ul class="accordion">
                         <li><a href="#" class="desc-1 white">Устройства</a></li>
                         <li><a href="#" class="desc-1 white">Картирджи</a></li>
                         <li><a href="#" class="desc-1 white">Жидкости</a></li>
                         <li><a href="#" class="desc-1 white">Аксессуары</a></li>
                     </ul>
                 </div>
+
             </div>
             <div class="footer-content-right">
-                <h2 class="title-h2 white">
+                <h2 class="title-h2 white accordionTrigger">
                     Подписка
+                    <img src="img/arrow_red.svg" alt="" class="arrowFooter">
                 </h2>
+                <ul class="accordion">
                 <form action="#">
                     <img src="img/email.svg" alt="" class="footer-form-email">
                     <input type="text" placeholder="Email" class="desc-2">
@@ -660,6 +676,7 @@
                         </span>
                     </button>
                 </form>
+                </ul>
             </div>
         </div>
         <div class="bottom_line">
@@ -717,6 +734,27 @@
                 <a href="#sign_in_form" class="desc-1 popup-with-zoom-anim">Я уже зарегистрирован</a>
             </div>
         </form>
+    </div>
+    <div class="mobile-menu">
+        <div class="mobile-menu-top">
+            <img src="img/logo.png" alt="" class="logo_mobile">
+            <img src="img/cross.svg" alt="" class="close_mobile">
+        </div>
+        <div class="mobile-menu-content">
+            <div class="mobile-menu-content-child">
+                <a href="#" class="categories-mobile"><img src="img/catalog.png" alt="">Каталог товаров</a>
+            </div>
+            <div class="mobile-menu-content-child">
+                <a href="#"><img src="img/user.png" alt="">Личный кабинет</a>
+                <a href="#"><img src="img/header_cart.svg" alt="">Корзина</a>
+            </div>
+            <div class="mobile-menu-content-child">
+                <a href="#">Контакты</a>
+                <a href="#">Доставка</a>
+                <a href="#">Оплата</a>
+            </div>
+
+        </div>
     </div>
     <div class="thanks" style="display: none">
             <div>
