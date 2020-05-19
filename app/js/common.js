@@ -100,6 +100,10 @@ $(function() {
     $('.filter-brand p').on('click', function() {
         $('.filter-brand').toggleClass('active');
     })
+    $('.catalog-wrapper-filter-menu').click(function () {
+        $('.filter').toggleClass('active');
+        $(this).toggleClass('active');
+    })
 
     //popup
     $('.popup-with-zoom-anim').magnificPopup({

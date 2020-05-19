@@ -110,11 +110,18 @@
 
 @media only screen and (max-width : 768px)
 	.filter
-		display: none
 		align-items: center
+		margin-left: 0
+		margin-top: gem(40)
+		width: gem(290)
+		display: none
+		&.active
+			display: block
+			
 	.catalog-wrapper
 		width: 100%
 		margin: 0
+		margin-top: gem(40)
 		&-filter
 			align-items: center
 			margin-left: gem(30)
@@ -126,8 +133,19 @@
 		border: gem(1) solid #D0D0D0
 		border-radius: gem(1)
 		margin-right: gem(20)
+		&.active
+			background: #fff
 		img
 			margin: 0
+	.catalog-main
+		flex-direction: column
+		align-items: center
+	.navigation 
+		h2
+			margin: gem(30) gem(30) gem(15) gem(30)
+		div
+			margin: 0 0 gem(30) gem(30)
+
 	.catalog_main .carousel-section
 		h2
 			text-align: center
