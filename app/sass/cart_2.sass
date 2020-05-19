@@ -5,6 +5,7 @@
 	&-left
 		display: flex
 		flex-direction: column
+		margin-left: gem(45)
 	&-right
 		display: flex
 		margin-left: gem(120)
@@ -20,7 +21,6 @@
 .cart-form
 	display: flex
 	flex-direction: column
-	margin-left: gem(45)
 	background: #fff
 	border: gem(1) solid #D0D0D0
 	width: gem(540)
@@ -34,7 +34,6 @@
 		display: flex
 		font-weight: 500
 		margin-bottom: gem(40)
-		margin-left: gem(45)
 		align-items: center
 		div, span
 			color: var(--coror-grey-very-light)
@@ -42,7 +41,6 @@
 			display: flex
 			font-weight: 500
 			margin-bottom: gem(40)
-			margin-left: gem(45)
 			align-items: center
 			div, span
 				color: var(--colod-black)	
@@ -53,7 +51,6 @@
 				display: flex
 				font-weight: 500
 				margin-bottom: gem(40)
-				margin-left: gem(45)
 				align-items: center
 				div, span
 					color: var(--colod-black)	
@@ -173,8 +170,8 @@
 	flex-direction: column
 	border: gem(1) solid #D0D0D0
 	border-top: none
-	margin-left: gem(45)
 	margin-bottom: gem(40)
+	width: gem(534)
 	&-form
 		display: flex
 		flex-direction: column
@@ -227,8 +224,30 @@
 	width: gem(330)
 	border: gem(1) solid #D0D0D0
 	border-radius: gem(3)
-	border-bottom: none
+	padding-top: gem(20)
 	&-element
 		display: flex
 		justify-content: space-between
+		margin-bottom: gem(10)
+		padding: 0 gem(20)
+		align-items: center
+		span
+			display: flex
+			font-weight: normal
+		span:last-child
+			text-align: right
+	&-button
+			display: flex
+			flex-direction: column
+			margin-top: gem(10)
+			padding: gem(20) gem(20) 0 gem(20)
+			border-top: gem(1) solid #D0D0D0
+			button
+				background: var(--color-orange)
+				border-radius: gem(3)
+				border: none
+				padding: gem(15) gem(30)
+				color: var(--color-white)
+				font-weight: 300
+				margin: gem(30) gem(25) gem(20) gem(25)
 		
