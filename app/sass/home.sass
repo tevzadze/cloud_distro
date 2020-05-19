@@ -130,6 +130,8 @@
 				align-items: center
 				span
 					text-transform: uppercase
+.catalog-tablet
+	display: none
 
 
 
@@ -196,3 +198,78 @@
 			height: gem(68)
 			span
 				font-size: gem(16)
+
+@media all and (max-width: 768px)
+	.home_main
+		padding: 0
+	.news
+		justify-content: center
+		height: gem(295)
+		&-section
+			margin-bottom: gem(50)
+		&-left
+			width: gem(553)
+			height: 100%
+			margin: 0
+		&-right
+			display: none
+		&-title
+			display: none
+	.carousel-section
+		margin: 0
+	.owl
+		&-nav
+			display: none
+		&-dots
+			display: none
+	.catalog-tablet
+		display: flex
+		margin-bottom: gem(50)
+		margin-left: gem(239)
+		span 
+			font-weight: 500
+			padding: gem(12) gem(90)
+			color: var( --color-white)
+			background: var(--color-orange)
+
+@media all and (max-width: 480px)
+	.home_main
+		padding: 0
+	footer
+		display: none
+	header
+		display: none
+	.news
+		justify-content: center
+		height: gem(172)
+		&-section
+			padding: gem(10) gem(15) gem(20) gem(15)
+			margin: 0
+		&-left
+			width: gem(290)
+			height: 100%
+			margin: 0
+		&-right
+			display: none
+		&-title
+			display: none
+	.carousel-section
+		margin: 0
+		padding: 0
+		padding: gem(23)
+	.owl
+		&-nav
+			display: none
+		&-dots
+			display: none
+	.catalog-tablet
+		display: flex
+		width: gem(290)
+		margin-bottom: gem(40)
+		margin-left: gem(15)
+		span 
+			font-weight: 500
+			padding: gem(12) gem(89)
+			color: var( --color-white)
+			background: var(--color-orange)
+
