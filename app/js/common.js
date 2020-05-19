@@ -12,28 +12,23 @@ $(function() {
     $('.last-watch-carousel').owlCarousel({
         loop: true,
         nav: true,
-        items: 4,
-        responsive : {
+        responsive : { 
+            481: {
+                tems: 1
+            },
+            482 : {
+                items: 1
+            },
+            769 : {
+                items: 3
+            },
             1025 : {
                 items: 4
             },
-            769 : {
-                items: 3,
-                center: true
-            },
-            480 : {
-                items: 2,
-                // center: true
-            },
-
-            0 : {
-                items: 1
-            }
         }
     })
     //card
     $('.card').each(function() {
-        // console.log(this);
         var dataPrice = $(this).data('price');
         $(this).find('.real-price').text(dataPrice)
     })
