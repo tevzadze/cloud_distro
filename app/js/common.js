@@ -13,16 +13,16 @@ $(function() {
         loop: true,
         nav: true,
         responsive : { 
-            481: {
-                tems: 1
-            },
-            482 : {
+            '0': {
                 items: 1
             },
-            769 : {
+            '483' : {
+                items: 1
+            },
+            '769' : {
                 items: 3
             },
-            1025 : {
+            '1025' : {
                 items: 4
             },
         }
