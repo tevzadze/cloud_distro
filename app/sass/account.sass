@@ -210,3 +210,118 @@
 					font-weight: 300
 
 
+.footer-content
+	background: var(--colod-black)
+	display: flex
+	padding: gem(120) gem(145)
+	justify-content: space-between
+	h2
+		margin-bottom: gem(30)
+		text-transform: uppercase
+		img
+			display: none
+	&-left
+		display: flex
+		div
+			margin-right: gem(100)
+			&:last-child
+				margin-right: 0
+		ul
+			display: flex
+			flex-direction: column
+			li
+				display: flex
+				margin-bottom: gem(10)
+				a:hover
+					text-decoration: underline
+	&-right
+		form
+			display: flex
+			flex-direction: column
+			position: relative
+			.footer-form-email
+				position: absolute
+				top: gem(10)
+				left: gem(20)
+			input
+				width: gem(307)
+				height: gem(50)
+				padding: gem(15) gem(20)
+				border: none
+				outline: none
+				padding-left: gem(66)
+				border-radius: gem(3)
+				font-weight: 500
+				&::-webkit-input-placeholder,
+				&::placeholder
+					font-weight: 300
+			button
+				width: gem(307)
+				margin-top: gem(16)
+				outline: none
+				border: none
+				border-radius: gem(3)
+				background: var(--color-orange)
+				height: gem(50)
+				display: flex
+				align-items: center
+				justify-content: center
+				cursor: pointer
+				transition: all 0.3s ease
+				&:hover
+					background: var(--color-orange-light)
+				span
+					text-transform: uppercase
+					
+			
+.bottom_line
+	background: #0D0D0D
+	text-align: center
+	padding: gem(20) 0
+	p
+		font-weight: 300
+@media all and (max-width: 1024px)
+	.footer-content
+		padding: gem(50) gem(30)
+		h2
+			margin-bottom: gem(15)
+		&-left
+			flex-direction: column
+			div
+				margin-bottom: gem(20)	
+	.bottom_line
+		padding: gem(15) 0
+		p
+			font-size: gem(14)
+			line-height: gem(16)
+	.footer-form-email
+		width: gem(35)
+		height: gem(35)
+
+			
+@media all and (max-width: 768px)
+	.footer-form-email
+		width: gem(30)
+		height: gem(30)
+
+@media all and (max-width: 480px)
+	.footer-content
+		flex-direction: column
+		h2 
+			font-size: gem(14)
+			line-height: gem(16)
+			border-bottom: 1px solid #8A8A8A
+			width: gem(260)
+			padding-bottom: gem(15)
+			img
+				display: block
+				position: absolute
+				right: gem(30)
+				margin-top: gem(-15)
+				cursor: pointer	
+				transition: all 0.375s ease
+				&.activeArrow
+					transform: rotate(180deg)
+		form
+			input, button
+				width: gem(260)

@@ -217,4 +217,19 @@ $(function() {
         }
     })
 
+
+if (document.documentElement.clientWidth < 480){
+   $('.accordion').slideUp();
+   $('.accordionTrigger').on('click', function(e){
+    let dropDown = $(this).closest('div').find('ul');
+    let rotate = $(this).find('img');
+    $('.accordion').not(dropDown).slideUp();
+    $('.arrowFooter').not(rotate).removeClass('activeArrow');
+    $(rotate).toggleClass('activeArrow');
+    dropDown.slideToggle();
+
+        e.preventDefault();
+   })
+}
+
 });
