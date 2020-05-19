@@ -95,6 +95,8 @@ header
 			flex-direction: row
 			justify-content: flex-start
 			align-items: center		
+			.burger-menu
+				display: none
 			img
 				margin-right: gem(64)
 		&-right
@@ -173,13 +175,17 @@ header
 			display: flex
 			height: 100%
 			align-items: center
-			&:hover
+			&.active
 				.categories-cat-dropdown
 					pointer-events: auto
 					opacity: 1
 				a
 					img
 						transform: rotate(180deg)
+				.cat-back
+					img
+						transform: unset
+						
 			a
 				height: 100%
 				display: flex
@@ -218,12 +224,57 @@ header
 		.top-line
 			display: none
 		.categories
-			display: none
+			height: auto
+			flex-direction: column
+			padding-right: 0
+			left: -100%
+			position: absolute
+			transition: all 0.375s ease
+			z-index: 10
+			height: 100vh
+			padding-bottom: gem(55)
+			&.active
+				left: 0
+				overflow: scroll
+
+			&-cat
+				width: 100%
+				height: auto
+				border-bottom: 1px solid #D0D0D0
+				height: auto
+				flex-direction: column
+				.cat-back
+					justify-content: flex-start
+					img
+						margin-left: 0
+						margin-right: gem(10)
+						width: gem(14)
+				&.active
+					.categories-cat-dropdown
+						position: relative	
+						display: flex					
+				a
+					width: 100%
+					justify-content: space-between
+					height: gem(76)
+				.categories-cat-dropdown
+					transition: none
+					border-top: 1px solid #D0D0D0
+					width: 100%
+					top: unset
+					display: none
+					
+					li
+						padding-left: gem(30)
+
 		.header_main
 			padding: gem(10) gem(30)
 			&-left
 				img
 					width: gem(46)
+					margin-left: gem(30)
+				.burger-menu
+					display: block
 			&-right 
 				.header-card
 					margin-left: gem(30)

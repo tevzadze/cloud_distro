@@ -27,6 +27,34 @@ $(function() {
             },
         }
     })
+    //mobile menu
+    $('.burger-menu, .close_mobile').click(function () {
+        $('.mobile-menu').toggleClass('active');
+        $('.categories').removeClass('active');
+        $('body').toggleClass('mobile-menu-open')
+    });
+
+    $('.categories-mobile, .cat-back').click(function () {
+       event.preventDefault();
+       $('.categories').toggleClass('active');
+
+    })
+
+    //categories dropdown
+    if ($(window).width() > 768) {
+        $('.categories-cat').hover(function () {
+            $(this).toggleClass('active')
+        })
+    }
+    else {
+        $('.categories-cat a').click(function () {
+            $(this).parent('.categories-cat').toggleClass('active')
+        })
+        $('.cat-link').click(function () {
+            event.preventDefault();
+        })
+    }
+    
     //card
     $('.card').each(function() {
         var dataPrice = $(this).data('price');
