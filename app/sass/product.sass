@@ -131,3 +131,90 @@
 		width: gem(15)
 		height: gem(15)
 		margin: gem(10) gem(5)
+
+@media only screen and (max-width : 1024px)
+	.product-feedback
+		margin-left: 0
+		margin: auto
+		width: gem(873)
+		&-button
+			margin-left: 0
+			margin: auto
+			width: gem(873)
+			margin-bottom: gem(30)
+	.product-main .carousel-section
+		margin-bottom: gem(120)
+
+@media only screen and (max-width : 768px)
+	.product-feedback
+		margin-left: 0
+		margin: auto
+		width: gem(708)
+		&-button
+			margin-left: 0
+			margin: auto
+			width: gem(708)
+			margin-bottom: gem(30)
+			span
+				width: gem(230)
+	.product-main .carousel-section
+		margin-top: gem(50)
+@media only screen and (max-width : 480px)
+	.product-main .navigation
+		margin-bottom: gem(30)
+		div
+			flex-wrap: wrap
+			align-items: center
+			margin-bottom: 0
+			a 
+				font-size: gem(10)
+				margin-top: gem(10)
+			img
+				margin-top: gem(10)
+		h2
+			font-size: var(--font-size-desc1)
+			margin-bottom: gem(5)
+	.product-feedback
+		width: gem(290)
+		&-button
+			width: gem(290)
+			margin-bottom: gem(30)
+			span
+				width: gem(230)	
+	.product-screen
+		flex-direction: column
+		margin: gem(30) gem(15)
+		padding: gem(30) 0
+		&-left
+			width: gem(290)
+	.product-screen-right
+		width: gem(290)
+	.product-screen-right-top-title
+		margin: 0
+	.product-screen-right-top
+		align-items: center
+		margin-top: gem(20)
+		h2
+			text-align: center
+	.product-card-rate
+		margin: gem(30) 0
+	.product-screen-right-bottom
+		border-top: none
+		justify-content: center
+	.product-price
+		margin: 0
+	.product-price-main
+		justify-content: center
+		margin-bottom: gem(30)
+	.product-feedback-button
+		span
+			padding: 0
+			border: none
+			color: var(--color-black)
+		div
+			display: none
+	.product-feedback
+		div span
+			font-size: var(--font-size-desc2)
+	.product-main .carousel-section h2
+		text-transform: uppercase

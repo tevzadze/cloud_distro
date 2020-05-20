@@ -406,3 +406,35 @@
 
 button
 	cursor: pointer
+
+@media only screen and (max-width : 768px)
+	.basket-table
+		margin: gem(50) gem(30)
+	.basket-table-element-left
+		span
+			font-size: var(--font-size-desc1)
+			padding-right: gem(22)
+	.basket-total
+		margin-bottom: gem(50)
+		span
+			font-size: var(--font-size-h2)
+			font-weight: normal	
+@media only screen and (max-width : 480px)
+	.basket-table
+		margin: gem(30) gem(15) gem(40) gem(15)
+	.basket-table-element-left
+		img
+			display: none
+	.basket-table-element-right
+		margin: 0
+		width: gem(240)
+		flex-wrap: wrap
+	.basket-table-element
+		flex-direction: column
+	.basket-table-element-end
+		height: auto
+		margin-left: gem(150)
+	.basket-table-element-left
+		
+		span
+			padding: 0
