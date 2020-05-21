@@ -19,10 +19,12 @@
 			&-left
 				display: flex
 				align-items: center
-				img
+				img:first-child
 					display: flex
 					height: gem(74)
 					margin: 0 gem(20) 0 gem(1)
+				img:last-child
+					display: none
 			&-right
 				display: flex
 				width: gem(360)
@@ -46,6 +48,8 @@
 				display: flex
 				height: gem(160)
 				align-items: center
+				span:first-child
+					display: none
 				img
 					display: flex
 					width: gem(15)
@@ -289,7 +293,6 @@
 		display: flex
 		justify-content: space-between
 		margin-bottom: gem(10)
-		padding: 0 gem(20)
 		align-items: center
 		span
 			display: flex
@@ -408,33 +411,76 @@ button
 	cursor: pointer
 
 @media only screen and (max-width : 768px)
-	.basket-table
-		margin: gem(50) gem(30)
-	.basket-table-element-left
-		span
-			font-size: var(--font-size-desc1)
-			padding-right: gem(22)
-	.basket-total
-		margin-bottom: gem(50)
-		span
-			font-size: var(--font-size-h2)
-			font-weight: normal	
+	.basket
+		&-table
+			margin: gem(50) gem(30)
+			&-element-left
+				span
+					font-size: var(--font-size-desc1)
+					padding-right: gem(22)
+		&-total
+			margin-bottom: gem(50)
+			span
+				font-size: var(--font-size-h2)
+				font-weight: normal	
 @media only screen and (max-width : 480px)
-	.basket-table
-		margin: gem(30) gem(15) gem(40) gem(15)
-	.basket-table-element-left
-		img
-			display: none
-	.basket-table-element-right
-		margin: 0
-		width: gem(240)
-		flex-wrap: wrap
-	.basket-table-element
+	.cart_2
 		flex-direction: column
-	.basket-table-element-end
-		height: auto
-		margin-left: gem(150)
-	.basket-table-element-left
-		
-		span
-			padding: 0
+		&-right
+			width: gem(290)
+	.cart-total_2
+		width: 100%
+	.basket
+		&-table
+			margin: gem(30) gem(15) gem(40) gem(15)
+			&-element
+				flex-direction: column
+				height: auto
+				border: none
+				padding: gem(20)
+				border-bottom: gem(1) solid #D0D0D0
+				&-left
+					width: 100%
+					justify-content: space-between
+					margin-bottom: gem(15)
+					img:first-child
+						display: none
+					img:last-child
+						display: flex
+						display: flex
+						width: gem(15)
+						height: gem(15)
+						margin: 0 0 gem(30) gem(20)
+					span
+						padding: 0
+						width: gem(140)
+				&-right
+					margin: 0
+					width: gem(240)
+					flex-wrap: wrap
+					div:nth-child(2)
+						order: -1
+				&-end
+					height: auto
+					margin-left: gem(80)
+					margin-top: gem(35)
+					img
+						display: none
+					span:first-child
+						display: flex
+						margin-right: gem(30)
+		&-total
+			flex-wrap: wrap
+			margin: 0 gem(15) gem(50) gem(15)
+			span
+				font-size: var(--font-size-h3)
+			span:nth-child(2)
+				margin: 0
+				margin-left: gem(77)
+				margin-bottom: gem(30)
+			span:nth-child(1)
+				margin-bottom: gem(30)
+			button
+				padding: gem(10) gem(90)
+				margin: 0
+

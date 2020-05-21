@@ -1,7 +1,7 @@
 .cart_2
 	display: flex
 	align-items: center
-	margin-bottom: gem(120)
+	margin-bottom: gem(80)
 	&-left
 		display: flex
 		flex-direction: column
@@ -229,24 +229,99 @@
 		display: flex
 		justify-content: space-between
 		margin-bottom: gem(10)
-		padding: 0 gem(20)
 		align-items: center
+		padding: 0 gem(20)
 		span
 			display: flex
 			font-weight: normal
 		span:last-child
 			text-align: right
 	&-button
-			display: flex
-			flex-direction: column
-			margin-top: gem(10)
-			padding: gem(20) gem(20) 0 gem(20)
-			border-top: gem(1) solid #D0D0D0
+		display: flex
+		flex-direction: column
+		margin-top: gem(10)
+		padding: gem(20) gem(20) 0 gem(20)
+		border-top: gem(1) solid #D0D0D0
+		button
+			background: var(--color-orange)
+			border-radius: gem(3)
+			border: none
+			padding: gem(15) gem(30)
+			color: var(--color-white)
+			font-weight: 300
+			margin: gem(20) gem(25) gem(20) gem(25)
+		.cart-total_2-element
+			padding: 0
+@media only screen and (max-width : 1024px)	
+	.cart_2-right
+		margin-right: gem(45)
+		margin-left: gem(45)	
+@media only screen and (max-width : 768px)
+	.cart_2
+		margin-bottom: gem(10)
+		flex-direction: column
+		align-items: flex-start
+		&-left
+			margin-left: gem(30)
+			margin-right: gem(30)
+			width: gem(356)
+		&-right
+			margin: 0 0 gem(70) gem(30)
+	.cart
+		&-total_2-button
 			button
-				background: var(--color-orange)
-				border-radius: gem(3)
-				border: none
-				padding: gem(15) gem(30)
-				color: var(--color-white)
-				font-weight: 300
-				margin: gem(30) gem(25) gem(20) gem(25)
+				margin-top: gem(20)
+		&-form
+			width: gem(534)
+			&-title
+				width:
+		&-total
+			display: none
+@media only screen and (max-width : 480px)
+	.cart_2
+		margin-bottom: gem(40)
+		&-left
+			margin-left: gem(15)
+			margin-right: gem(15)
+			width: gem(290)
+		&-right
+			margin: 0 0 0 gem(15)
+		.active
+			margin-bottom: 0
+	.cart
+		&-form
+			width: gem(290)
+			padding: gem(25) gem(10)
+			margin-top: gem(30)
+			margin-bottom: gem(30)
+			&-input-element
+				width: gem(270)
+				flex-direction: column
+			span
+				font-size: var(--font-size-desc2)
+				width: 100%
+				text-align: left
+			input
+				width: 100%
+			&-title
+				margin-bottom: gem(30)
+				span 
+					flex-wrap: wrap
+					width: gem(218)
+		&-delivery
+			width: 100%
+			margin-top: gem(30)
+			border-top: gem(1) solid #d0d0d0
+			width: gem(290)
+			&-form
+				padding: gem(20) gem(10)
+				border-top: none
+	.cart-total
+		display: none
+	.circle
+		margin-right: gem(18)
+		width: gem(40)
+	.widget
+		width: gem(290)
+		margin: 0
+		margin-top: gem(40)
