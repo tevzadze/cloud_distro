@@ -236,12 +236,19 @@
     		width: 51%
     		margin-left: gem(30)
 @media only screen and (max-width : 768px)
+	.account
+		margin-bottom: gem(50)
+	.account-left-table
+		&:nth-child(2)
+			margin-bottom: gem(40)
+
 	.account-left-title
 		padding-left: gem(30)
 		padding-bottom: gem(40)
 	.account-left-table
 		margin-left: gem(30)
 		font-size: var(--font-size-h3)
+		margin-bottom: 0
 	.account-left-table-left
 		width: gem(550)
 	.account-left-table-right
@@ -254,6 +261,8 @@
 	.account-right-table
 		margin-left: gem(30)
 @media only screen and (max-width : 480px)
+	.account
+		margin-bottom: gem(40)
 	.account-left-info
 		padding: gem(20) gem(10)
 		margin: 0 gem(15)

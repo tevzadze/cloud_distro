@@ -1,3 +1,7 @@
+.product-main .carousel-section
+	margin: gem(120) 0
+	h2
+		text-transform: uppercase
 .product
 	display: flex
 	flex-direction: column
@@ -146,6 +150,19 @@
 		margin-bottom: gem(120)
 
 @media only screen and (max-width : 768px)
+	.product-screen
+		height: gem(257)
+		margin: gem(50) gem(30)
+	.product-screen-right-top-title
+		margin-top: gem(20)
+		margin-bottom: 0
+	.product-card-rate
+		margin-bottom: gem(20)
+	.product-price
+		margin-top: gem(10)
+		margin-bottom: gem(10)
+	.product-price-main
+		margin-bottom: gem(10)
 	.product-feedback
 		margin-left: 0
 		margin: auto
@@ -185,6 +202,7 @@
 		flex-direction: column
 		margin: gem(30) gem(15)
 		padding: gem(30) 0
+		height: unset
 		&-left
 			width: gem(290)
 	.product-screen-right

@@ -1,14 +1,4 @@
-.cart_2
-	display: flex
-	align-items: center
-	margin-bottom: gem(80)
-	&-left
-		display: flex
-		flex-direction: column
-		margin-left: gem(45)
-	&-right
-		display: flex
-		margin-left: gem(120)
+
 .circle
 	display: flex
 	align-items: center
@@ -30,20 +20,7 @@
 		display: flex
 		flex-direction: column
 		// width: gem(540)
-	&-title
-		display: flex
-		font-weight: 500
-		margin-bottom: gem(40)
-		align-items: center
-		div, span
-			color: var(--coror-grey-very-light)
-		&-active
-			display: flex
-			font-weight: 500
-			margin-bottom: gem(40)
-			align-items: center
-			div, span
-				color: var(--colod-black)	
+	
 			.circle
 				display: flex
 				border: gem(1) solid var(--color-orange)
@@ -258,23 +235,19 @@
 		margin-left: gem(45)	
 @media only screen and (max-width : 768px)
 	.cart_2
-		margin-bottom: gem(10)
 		flex-direction: column
 		align-items: flex-start
 		&-left
 			margin-left: gem(30)
 			margin-right: gem(30)
-			width: gem(356)
 		&-right
-			margin: 0 0 gem(70) gem(30)
+			margin: 0 0 0 gem(30)
 	.cart
 		&-total_2-button
 			button
 				margin-top: gem(20)
 		&-form
 			width: gem(534)
-			&-title
-				width:
 		&-total
 			display: none
 @media only screen and (max-width : 480px)
@@ -324,4 +297,4 @@
 	.widget
 		width: gem(290)
 		margin: 0
-		margin-top: gem(40)
+		margin-top: gem(40) 
