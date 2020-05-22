@@ -181,24 +181,54 @@
             </div>
         </div>
     </header>
-    <main class="payment_main">
+    <main class="contacts_main">
         <div class="navigation">
             <h2 class="title-h2 navigationChange">
-                Условия оплаты
+                Контакты
             </h2>
             <div>
                 <a class="desc-2" href="#">Главная</a>
                 <img src="img/nav.svg" alt="Навигация">
-                <span class="desc-2 navigationChange" href="#">Условия оплаты</span>
+                <span class="desc-2 navigationChange" href="#">Контакты</span>
             </div>
         </div>
-        <section class="payment_main-info">
+        <section class="delivery_main-info">
             <h1 class="title-h2">
-                Lorem ipsum dolor.
+                Контактные телефоны
             </h1>
-            <p class="desc-1">
-                Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Великий себя даже безопасную рекламных взгляд что строчка единственное коварных, агенство, знаках, решила одна. Безорфографичный, не однажды своего проектах вершину.
-            </p>
+            <div class="more_contacts-inner activeInfo">
+                            <p class="title-h3">
+                                Консультации и заказ по телефону
+                            </p>
+                            <a href="tel:+380739063643" class="title-h3 orange">+38(073) 906 36 43</a>
+                            <p class="title-h3">
+                                График работы call-центра
+                            </p>
+                            <div class="schedule">
+                                <div class="schedule-left">
+                                    <p class="desc-1">
+                                        В будние:
+                                    </p>
+                                    <p class="desc-1">
+                                        Суббота:
+                                    </p>
+                                    <p class="desc-1">
+                                        Воскресенье:
+                                    </p>
+                                </div>
+                                <div class="schedule-right">
+                                    <p class="desc-1">
+                                        с 8:00 до 21:00
+                                    </p>
+                                    <p class="desc-1">
+                                        с 8:00 до 21:00
+                                    </p>
+                                    <p class="desc-1">
+                                        с 8:00 до 21:00
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
         </section>
     </main>
     <footer>
@@ -329,6 +359,77 @@
             </div>
             <div class="mobile-menu-content-child">
                 <a href="#">Контакты</a>
+                <a href="#">Доставка</a>
+                <a href="#">Оплата</a>
+            </div>
+
+        </div>
+    </div>
+    <div class="sign_in_form zoom-anim-dialog mfp-hide" id="sign_in_form">
+        <div class="sign_in_form-title title-h2">Вход</div>
+        <form action="">
+            <div class="sign_in_form-element">
+                <span class="desc-2">Эл. почта или телефон</span>
+                <input type="text" placeholder="example@gmail.com">
+            </div>
+            <div class="sign_in_form-element">
+                <span class="desc-2">Пароль</span>
+                <input type="text" placeholder="********">
+            </div>
+            <div class="sign_in_form-button">
+                <button class="title-h3">Войти</button>
+                <a href="#sign-up" class="desc-1 popup-with-zoom-anim">Зарегистрироваться</a>
+            </div>
+        </form>
+    </div>
+    <div class="sign_in_form zoom-anim-dialog mfp-hide" id="sign-up">
+        <div class="sign_in_form-title title-h2">Регистрация</div>
+        <form action="">
+            <div class="sign_in_form-element">
+                <span class="desc-2">Название магазина</span>
+                <input type="text" placeholder="Vape shop">
+            </div>
+            <div class="sign_in_form-element">
+                <span class="desc-2">Ваше имя</span>
+                <input type="text" placeholder="Михаил Иванов">
+            </div>
+            <div class="sign_in_form-element">
+                <span class="desc-2">Телефон</span>
+                <input type="text" placeholder="+38 (050) 111 11 11">
+            </div>
+            <div class="sign_in_form-element">
+                <span class="desc-2">Эл.почта</span>
+                <input type="text" placeholder="example@gmail.com">
+            </div>
+            <div class="sign_in_form-element">
+                <span class="desc-2">Придумайте пароль</span>
+                <input type="text" placeholder="********">
+            </div>
+            <div class="sign_in_form-info">
+                <span class="desc-2">Пароль должен быть не менее 6 символов, содержать цифры и латинские буквы, в том числе заглавные, и не должен совпадать с именем и эл. почтой</span>
+                <span class="desc-2">Регистрируясь, вы соглашаетесь с <a href="#">пользовательским соглашением</a></span>
+            </div>
+            <div class="sign_in_form-button">
+                <button class="title-h3">Зарегистрироваться</button>
+                <a href="#sign_in_form" class="desc-1 popup-with-zoom-anim">Я уже зарегистрирован</a>
+            </div>
+        </form>
+    </div>
+    <div class="mobile-menu">
+        <div class="mobile-menu-top">
+            <img src="img/logo.png" alt="" class="logo_mobile">
+            <img src="img/cross.svg" alt="" class="close_mobile">
+        </div>
+        <div class="mobile-menu-content">
+            <div class="mobile-menu-content-child">
+                <a href="#" class="categories-mobile"><img src="img/catalog.png" alt="">Каталог товаров</a>
+            </div>
+            <div class="mobile-menu-content-child">
+                <a href="#sign_in_form" class="popup-with-zoom-anim"><img src="img/user.png" alt="">Личный кабинет</a>
+                <a href="/cart.html"><img src="img/header_cart.svg" alt="">Корзина</a>
+            </div>
+            <div class="mobile-menu-content-child">
+                <a href="#">Контакты</a>
                 <a href="/delivery.html">Доставка</a>
                 <a href="/payment.html">Оплата</a>
             </div>
@@ -343,6 +444,7 @@
             <span class="title-h2">Спасибо за подписку</span>
             <span class="desc-1">На ваш почтовый ящик было отправлено письмо.  Подтвердите подписку, перейдя по ссылке в письме.</span>
         </div> 
+
     <script src="js/scripts.min.js"></script>
     <!-- include additional scripts here AFTER app scripts will run -->
 </body>

@@ -21,7 +21,7 @@
 </head>
 
 <body>
-    <header>
+   <header>
         <div class="top-line">
             <div class="top-line-left">
                 <div class="header-phone">
@@ -70,10 +70,10 @@
                         </div>
                     </div>
                 </div>
-                <a href="#" class="desc-2 white">
+                <a href="/delivery.html" class="desc-2 white">
                     Доставка
                 </a>
-                <a href="#" class="desc-2 white">
+                <a href="/payment.html" class="desc-2 white">
                     Оплата
                 </a>
             </div>
@@ -107,7 +107,7 @@
                     </button>
                 </form>
                 <div class="header-card">
-                    <a href="#">
+                    <a href="/cart.html">
                         <img src="img/header_cart.svg" alt="">
                         <span class="cart-counter desc-2 fill">
                             1
@@ -474,42 +474,48 @@
     <footer>
         <div class="footer-content">
             <div class="footer-content-left">
-                <div>
-                    <h2 class="title-h2 white">
+                <div class="accordionFather">
+                    <h2 class="title-h2 white accordionTrigger">
                         Мой аккаунт
+                        <img src="img/arrow_red.svg" alt="" class="arrowFooter">
                     </h2>
-                    <ul>
+                    <ul class="accordion">
                         <li><a href="#" class="desc-1 white">Вход</a></li>
                         <li><a href="#" class="desc-1 white">Регистрация</a></li>
                         <li><a href="#" class="desc-1 white">Заказы</a></li>
                     </ul>
                 </div>
                 <div>
-                    <h2 class="title-h2 white">
+                    <h2 class="title-h2 white accordionTrigger">
                         О магазине
+                        <img src="img/arrow_red.svg" class="arrowFooter" alt="">
                     </h2>
-                    <ul>
+                    <ul class="accordion">
                         <li><a href="#" class="desc-1 white">Главная</a></li>
-                        <li><a href="#" class="desc-1 white">Доствака</a></li>
-                        <li><a href="#" class="desc-1 white">Оплата</a></li>
+                        <li><a href="/delivery.html" class="desc-1 white">Доствака</a></li>
+                        <li><a href="/payment.html" class="desc-1 white">Оплата</a></li>
                     </ul>
                 </div>
                 <div>
-                    <h2 class="title-h2 white">
+                    <h2 class="title-h2 white accordionTrigger">
                         Каталог
+                        <img src="img/arrow_red.svg" alt="" class="arrowFooter">
                     </h2>
-                    <ul>
+                    <ul class="accordion">
                         <li><a href="#" class="desc-1 white">Устройства</a></li>
                         <li><a href="#" class="desc-1 white">Картирджи</a></li>
                         <li><a href="#" class="desc-1 white">Жидкости</a></li>
                         <li><a href="#" class="desc-1 white">Аксессуары</a></li>
                     </ul>
                 </div>
+
             </div>
             <div class="footer-content-right">
-                <h2 class="title-h2 white">
-                    Каталог
+                <h2 class="title-h2 white accordionTrigger">
+                    Подписка
+                    <img src="img/arrow_red.svg" alt="" class="arrowFooter">
                 </h2>
+                <ul class="accordion">
                 <form action="#">
                     <img src="img/email.svg" alt="" class="footer-form-email">
                     <input type="text" placeholder="Email" class="desc-2">
@@ -519,6 +525,7 @@
                         </span>
                     </button>
                 </form>
+                </ul>
             </div>
         </div>
         <div class="bottom_line">
@@ -527,6 +534,56 @@
             </p>
         </div>
     </footer>
+    <div class="sign_in_form zoom-anim-dialog mfp-hide" id="sign_in_form">
+        <div class="sign_in_form-title title-h2">Вход</div>
+        <form action="">
+            <div class="sign_in_form-element">
+                <span class="desc-2">Эл. почта или телефон</span>
+                <input type="text" placeholder="example@gmail.com">
+            </div>
+            <div class="sign_in_form-element">
+                <span class="desc-2">Пароль</span>
+                <input type="text" placeholder="********">
+            </div>
+            <div class="sign_in_form-button">
+                <button class="title-h3">Войти</button>
+                <a href="#sign-up" class="desc-1 popup-with-zoom-anim">Зарегистрироваться</a>
+            </div>
+        </form>
+    </div>
+    <div class="sign_in_form zoom-anim-dialog mfp-hide" id="sign-up">
+        <div class="sign_in_form-title title-h2">Регистрация</div>
+        <form action="">
+            <div class="sign_in_form-element">
+                <span class="desc-2">Название магазина</span>
+                <input type="text" placeholder="Vape shop">
+            </div>
+            <div class="sign_in_form-element">
+                <span class="desc-2">Ваше имя</span>
+                <input type="text" placeholder="Михаил Иванов">
+            </div>
+            <div class="sign_in_form-element">
+                <span class="desc-2">Телефон</span>
+                <input type="text" placeholder="+38 (050) 111 11 11">
+            </div>
+            <div class="sign_in_form-element">
+                <span class="desc-2">Эл.почта</span>
+                <input type="text" placeholder="example@gmail.com">
+            </div>
+            <div class="sign_in_form-element">
+                <span class="desc-2">Придумайте пароль</span>
+                <input type="text" placeholder="********">
+            </div>
+            <div class="sign_in_form-info">
+                <span class="desc-2">Пароль должен быть не менее 6 символов, содержать цифры и латинские буквы, в том числе заглавные, и не должен совпадать с именем и эл. почтой</span>
+                <span class="desc-2">Регистрируясь, вы соглашаетесь с <a href="#">пользовательским соглашением</a></span>
+            </div>
+            <div class="sign_in_form-button">
+                <button class="title-h3">Зарегистрироваться</button>
+                <a href="#sign_in_form" class="desc-1 popup-with-zoom-anim">Я уже зарегистрирован</a>
+            </div>
+        </form>
+    </div>
     <div class="mobile-menu">
         <div class="mobile-menu-top">
             <img src="img/logo.png" alt="" class="logo_mobile">
@@ -537,17 +594,25 @@
                 <a href="#" class="categories-mobile"><img src="img/catalog.png" alt="">Каталог товаров</a>
             </div>
             <div class="mobile-menu-content-child">
-                <a href="#"><img src="img/user.png" alt="">Личный кабинет</a>
-                <a href="#"><img src="img/header_cart.svg" alt="">Корзина</a>
+                <a href="#sign_in_form" class="popup-with-zoom-anim"><img src="img/user.png" alt="">Личный кабинет</a>
+                <a href="/cart.html"><img src="img/header_cart.svg" alt="">Корзина</a>
             </div>
             <div class="mobile-menu-content-child">
                 <a href="#">Контакты</a>
-                <a href="#">Доставка</a>
-                <a href="#">Оплата</a>
+                <a href="/delivery.html">Доставка</a>
+                <a href="/payment.html">Оплата</a>
             </div>
 
         </div>
     </div>
+    <div class="thanks" style="display: none">
+            <div>
+                <span class="title-h2">Подписка на рассылку</span><img src="img/cross.svg" alt="Закрыть">
+            </div>
+            <img src="img/like.svg" alt="Лайк">
+            <span class="title-h2">Спасибо за подписку</span>
+            <span class="desc-1">На ваш почтовый ящик было отправлено письмо.  Подтвердите подписку, перейдя по ссылке в письме.</span>
+        </div> 
     <script src="js/scripts.min.js"></script>
     <!-- include additional scripts here AFTER app scripts will run -->
 </body>
