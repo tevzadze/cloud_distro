@@ -36,6 +36,16 @@ body
         overflow: hidden
     &.modal-active
         overflow: hidden
+header        
+    .header_main-left
+        position: relative
+        img
+            position: absolute
+            height: gem(65)
+        p
+            margin-left: gem(90)
+
+
 
 main
     position: relative
@@ -145,7 +155,14 @@ button[type='submit']
         top: unset
         margin-right: gem(53)
         bottom: gem(-60)
-
+    header
+        .header_main-left
+            position: relative
+            img
+                position: unset
+                height: gem(35)
+                width: gem(35)
+                margin-left: gem(64)
 @media only screen and (max-width : 480px)
 
     body
