@@ -54,10 +54,22 @@
 	&-price
 		padding: gem(20)
 		border-bottom: 1px solid #D0D0D0
+		display: flex
+		flex-direction: column
+		align-items: center
+	.title-h2
+		display: flex
+		width: gem(197)
+		text-align: left
 	&-brand
+		display: flex
 		padding: gem(20)
-		p
-			cursor: pointer
+		flex-direction: column
+		&-header
+			display: flex
+			width: 100%
+			p
+				cursor: pointer
 			img
 				transition: all 0.3s ease
 		&.active
@@ -95,8 +107,6 @@
 						~ .checkbox
 							background: var(--color-orange)
 							border: 1px solid var(--color-orange)
-
-
 		p
 			display: flex
 			justify-content: space-between
@@ -117,6 +127,10 @@
 		display: none
 		&.active
 			display: block
+			.title-h2
+				width: 100%
+			.wrapper-price
+				width: 100%
 			
 	.catalog-wrapper
 		width: 100%

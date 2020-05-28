@@ -1,0 +1,79 @@
+  
+.wrapper-price 
+  width: gem(197)
+  margin: gem(20) 0
+  display: flex
+
+.price-field 
+    position: relative
+    border-radius: 3px
+    input[type=range] 
+        position: absolute
+        width: gem(197)
+        height: gem(2)
+        border: 0
+        outline: 0
+        border-radius: 5px
+        pointer-events: none
+        -webkit-appearance: none
+        &::-webkit-slider-thumb  
+            position: relative
+            -webkit-appearance: none
+            border-radius: 50%
+            height: gem(15)
+            width: gem(15)
+            background-color: var(--color-white)
+            border: var(--color-orange) 2px solid
+            margin-top: gem(-8)
+            cursor: pointer
+            cursor: pointer
+            pointer-events: all
+            z-index: 100
+        &::-webkit-slider-runnable-track 
+            width: gem(197)
+            height: gem(2)
+            cursor: pointer
+            border-radius: 5px
+            background-color: var(--color-orange)
+.price-wrap 
+    display: flex
+    justify-content: space-between
+    color: #fff
+    font-size: 14px
+    line-height: 1.2em
+    font-weight: 400
+    margin-bottom: gem(25)
+    label 
+        text-align: right
+        width: auto
+        border: 0
+        padding: 0
+        margin: 0 
+
+.price-wrap-1, 
+.price-wrap-2 
+    display: flex
+
+.price-wrap #one, 
+.price-wrap #two
+    width: gem(76)
+    text-align: left
+    border: gem(1) solid #D0D0D0
+    border-radius: gem(3)
+    font-weight: 300
+    outline: none
+    padding: gem(6) gem(8)
+    transition: all ease 0.375s
+    background: #F4F4F4
+    color: var(--coror-grey-very-light)
+    &:focus
+        border: gem(1) solid var(--colod-black)
+
+
+@media only screen and (max-width : 768px)
+    .price-field input[type=range] 
+          width: gem(244)
+
+
+
+
