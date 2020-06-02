@@ -96,7 +96,6 @@
 				display: flex
 				font-weight: 500
 
-
 	&-button
 		display: flex
 		flex-direction: row
@@ -142,12 +141,6 @@
 			display: flex
 .catalog-tablet
 	display: none
-
-
-
-
-
-
 .news
 	display: flex
 	flex-direction: row
@@ -179,10 +172,9 @@
 		position: absolute
 		right: 0
 		bottom: 0
-.news-section
-	padding: gem(60) gem(42) 0 gem(42)
+	&-section
+		padding: gem(60) gem(42) 0 gem(42)
 .carousel-section
-	// display: block
 	margin-top: gem(120)
 	padding: 0 gem(148)
 	position: relative
@@ -253,9 +245,7 @@
 @media all and (max-width: 480px)
 	.carousel-section
 		padding: 0 gem(15)
-	.carousel-section
 		margin-bottom: gem(101)
-		
 		h2
 			font-size: var(--font-size-desc1)
 	.news
