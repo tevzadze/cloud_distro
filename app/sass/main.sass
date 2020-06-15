@@ -36,7 +36,10 @@ body
         overflow: hidden
     &.modal-active
         overflow: hidden
-header        
+header
+    position: fixed
+    z-index: 99
+    width: 100%      
     .header_main-left
         position: relative
         img
@@ -49,6 +52,7 @@ header
 
 main
     position: relative
+    margin-top: gem(160)
     width: 100%
     background: var(--bg-light-gray)
 
@@ -163,11 +167,15 @@ button[type='submit']
                 height: gem(35)
                 width: gem(35)
                 margin-left: gem(64)
+    main
+        margin-top: gem(55)
 @media only screen and (max-width : 480px)
 
     body
         &.modal-active
             position: fixed
+    main
+        margin-top: gem(72)
 
     .xxs-visible
         display: block

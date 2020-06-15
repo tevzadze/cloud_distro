@@ -77,6 +77,21 @@
 			border-radius: gem(3)
 			border: none
 			color: var(--color-white)
+	&-empty
+		display: flex
+		margin: gem(30) gem(45) 0 gem(45)
+		padding: gem(54) gem(40)
+		align-items: center
+		border: gem(1) solid #D0D0D0
+		img
+			display: flex
+			margin-right: gem(40)
+			width: gem(51)
+			height: gem(51)
+		span
+			color: var(--coror-grey-very-light)
+			
+			font-weight: normal
 .cart_2
 	display: flex
 	align-items: center
@@ -459,6 +474,8 @@
 			span
 				font-size: var(--font-size-h2)
 				font-weight: normal	
+		&-empty
+			margin: gem(50) gem(30)
 	.cart_2
 		margin-bottom: gem(50)
 		flex-direction: column
@@ -539,7 +556,16 @@
 				margin-bottom: gem(30)
 			button
 				padding: gem(10) gem(90)
-				margin: 0			
+				margin: 0	
+		&-empty
+			margin: gem(30) gem(15)
+			padding: gem(53) gem(20)
+			span
+				font-size: gem(18)
+			img
+				margin-right: gem(20)
+				width: gem(40)
+				height: gem(40)
 	.cart_2
 		display: flex
 		align-items: center
