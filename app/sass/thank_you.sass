@@ -1,0 +1,25 @@
+.thank_you
+	display: flex
+	flex-direction: column
+	justify-content: center
+	align-items: center
+	padding: gem(150) 0
+	background-color: #E5E5E5
+	text-align: center
+	img
+		display: flex
+		width: gem(62)
+		height: gem(62)
+	span:nth-child(2)
+		margin: gem(30) 0 gem(40) 0
+		font-weight: normal
+		color: var(--colod-black)
+	span:nth-child(3)
+		font-weight: 300
+		color: var(--coror-grey-very-light)
+@media all and (max-width: 1024px)
+	.thank_you
+		padding: gem(100) 0
+@media all and (max-width: 480px)
+	.thank_you
+		padding: gem(40) 0
