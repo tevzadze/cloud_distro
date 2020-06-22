@@ -15,13 +15,16 @@
 		background: #fff
 		&-left
 			display: flex
-			width: gem(606)
+			width: gem(777)
+			height: gem(398)
+			padding: gem(15) gem(136)
 			justify-content: center
 			border-right: gem(1) solid #D0D0D0
 			align-items: center
 
 			img
 				height: 100%
+				width: 100%
 		&-right
 			display: flex
 			flex-direction: column
@@ -148,21 +151,22 @@
 			margin-bottom: gem(30)
 	.product-main .carousel-section
 		margin-bottom: gem(120)
+	.product-screen-left
+		padding: gem(15) gem(26)
 
 @media only screen and (max-width : 768px)
 	.product-screen
-		height: gem(257)
 		margin: gem(50) gem(30)
 	.product-screen-right-top-title
 		margin-top: gem(20)
 		margin-bottom: 0
 	.product-card-rate
-		margin-bottom: gem(20)
+		margin: gem(40)
 	.product-price
 		margin-top: gem(10)
 		margin-bottom: gem(10)
 	.product-price-main
-		margin-bottom: gem(10)
+		margin: gem(40) 0
 	.product-feedback
 		margin-left: 0
 		margin: auto
@@ -176,6 +180,9 @@
 				width: gem(230)
 	.product-main .carousel-section
 		margin-top: gem(50)
+	.product-screen-left
+		padding: gem(50) gem(20)
+		height: gem(398)
 @media only screen and (max-width : 480px)
 	.product-main .navigation
 		margin-bottom: gem(30)
@@ -201,10 +208,14 @@
 	.product-screen
 		flex-direction: column
 		margin: gem(30) gem(15)
-		padding: gem(30) 0
+		padding: gem(6) 0 gem(20) 0
 		height: unset
+		align-items: center
 		&-left
-			width: gem(290)
+			width: 100%
+			height: gem(221)
+			padding: 0 gem(6)
+			border: none
 	.product-screen-right
 		width: gem(290)
 	.product-screen-right-top-title
@@ -216,6 +227,7 @@
 			text-align: center
 	.product-card-rate
 		margin: gem(30) 0
+		margin-bottom: 0
 	.product-screen-right-bottom
 		border-top: none
 		justify-content: center
