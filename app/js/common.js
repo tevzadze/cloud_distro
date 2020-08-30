@@ -31,7 +31,8 @@ $(function() {
     $('.burger-menu, .close_mobile').click(function() {
         $('.mobile-menu').toggleClass('active');
         $('.categories').removeClass('active');
-        $('body').toggleClass('mobile-menu-open')
+        $('body').toggleClass('mobile-menu-open');
+        $('.more_contacts-inner').removeClass('active');
     });
 
     $('.categories-mobile, .cat-back').click(function() {
@@ -281,9 +282,9 @@ $(function() {
             $('.moneyOption').fadeOut(0);
         }
         if (prop2 && prop1) {
-            $(secondStepFin).fadeIn(300);
-            $('.deliveryButton').fadeOut(0);
-            $(thirdStep).fadeOut(0);
+            
+            // $('.deliveryButton').fadeOut(0);
+            // $(thirdStep).fadeOut(0);
         } else {
             $(secondStepFin).fadeOut(300);
             $('.deliveryButton').fadeIn(300);
@@ -297,6 +298,10 @@ $(function() {
             $('.widget').fadeIn(300);
             $(firstStep).addClass('max');
             $(thirdStep).addClass('active');
+            $(secondStepFin).fadeIn(300);
+            $('.cart-delivery').fadeOut(0);
+            $('.cart-deliveryCaption').removeClass('max');
+            $('.cart-deliveryCaption').removeClass('active');
         }
     })
 
@@ -315,4 +320,8 @@ $(function() {
         })
     }
 
+    $('.mobile-menu-content-child a:nth-child(1)').on('click', function () {
+        event.preventDefault();
+        $('.more_contacts-inner').addClass('active');
+    })
 });

@@ -25,7 +25,7 @@
 					img:first-child
 						display: flex
 						height: gem(74)
-						margin: 0 gem(20) 0 gem(1)
+						margin: 0 gem(20) 0 gem(20)
 			&-right
 				display: flex
 				width: gem(360)
@@ -109,6 +109,8 @@
 		display: flex
 		margin-left: gem(120)
 		background: #fff
+		&:nth-child(3)
+			margin-top: gem(70)
 	.active
 		display: flex
 		font-weight: 500
@@ -451,10 +453,20 @@
  		background: #7b7b7b
 .widget
 	display: flex
-	background: #FF671F
-	width: gem(400)
-	height: gem(400)
+	background: #FFF
+	padding: gem(20) gem(50)
+	border: 1px solid #D0D0D0
 	margin: gem(50)
+	font-size: gem(18)
+	line-height: gem(30)
+	max-width: gem(280)
+	flex-direction: column
+	justify-content: space-between
+	span
+		font-size: gem(16)
+		line-height: gem(20)
+		color: #202020
+		margin-bottom: gem(20)
 	button
 		cursor: pointer
 
@@ -501,7 +513,6 @@
 		width: gem(532)
 		margin: 0
 		margin-top: gem(40)
-		height: gem(400)
 @media only screen and (max-width : 480px)
 	.basket
 		&-table
@@ -588,7 +599,7 @@
 			width: gem(290)
 			margin: 0
 			margin-top: gem(40)
-			height: gem(200) 
+			// height: gem(200) 
 		.circle
 			display: flex
 			align-items: center

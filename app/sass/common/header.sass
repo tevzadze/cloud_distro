@@ -1,3 +1,6 @@
+.more_contacts-inner
+	display: none
+	
 header
 	background: var(--colod-black)
 	
@@ -201,14 +204,16 @@ header
 			&-dropdown
 				position: absolute
 				top: gem(61)
+				max-height: 75vh
+				overflow-y: scroll
 				z-index: 9
-				display: flex
+				display: block
 				flex-direction: column
 				pointer-events: none
 				opacity: 0
 				transition: all 0.1s ease
 				li
-					display: flex
+					display: block
 					background: #fff
 					border: 1px #DFDFDF solid
 					border-top: none
@@ -224,9 +229,39 @@ header
 		p
 			display: none
 @media all and (max-width: 768px)
+	.more_contacts
+		&-inner
+			position: fixed
+			display: block
+			
+			z-index: 99
+			height: 100vh
+			margin-top: gem(56)
+			left: -100%
+			width: 100%
+			background: #f4f4f4
+			padding: gem(30) gem(15)
+			transition: all 0.375s ease
+			a
+				display: flex
+				margin-top: gem(10)
+				margin-bottom: gem(20)
+			h2
+				margin-bottom: gem(20)
+			.schedule
+				display: flex
+				flex-direction: row
+				justify-content: space-between
+				margin-top: gem(10)
+				&-left
+					width: 50%
+				&-right
+					width: 50%
+			&.active
+				left: 0
 	header
 		.top-line
-			display: none
+			display: none			
 		.categories
 			height: auto
 			flex-direction: column

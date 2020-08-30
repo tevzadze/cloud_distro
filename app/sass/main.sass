@@ -53,7 +53,7 @@ header
 
 main
     position: relative
-    margin-top: gem(205)
+    margin-top: gem(190)
     width: 100%
     background: var(--bg-light-gray)
 
@@ -145,6 +145,21 @@ button[type='submit']
                 line-height: gem(20)
             &.owl-prev
                 margin-right: gem(20)
+.search-empty
+    display: flex
+    flex-direction: column
+    max-width: gem(1400)
+    align-items: center
+    margin: auto
+    padding: gem(120) 0
+    img
+        margin-bottom: gem(50)
+    h1
+        text-align: center
+        
+    span
+        color: var(--color-orange)
+
 @media only screen and (max-width : 1024px)
     .s-hidden
         display: none
@@ -173,13 +188,18 @@ button[type='submit']
                 margin-left: gem(64)
     main
         margin-top: gem(55)
+    .search-empty
+        padding: gem(80) gem(15)
+        img
+            margin-bottom: gem(30)
+
 @media only screen and (max-width : 480px)
 
     body
         &.modal-active
             position: fixed
     main
-        margin-top: gem(72)
+        margin-top: gem(55)
 
     .xxs-visible
         display: block
