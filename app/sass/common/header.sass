@@ -1,10 +1,25 @@
 .more_contacts-inner
 	display: none
-	
+a.form_header_button
+	display: flex
+	justify-content: center
+	align-items: center
+	border-radius: gem(3)
+	border: none
+	outline: 0
+	background: var(--color-orange)
+	height: gem(28)
+	width: gem(151)
+	transition: all 375ms ease
+	font-size: gem(10)
+	font-weight: bold
+	line-height: gem(12)
+	&:hover
+		text-decoration: none !important
+		background: var(--color-orange-light)
 header
 	background: var(--colod-black)
 	
-		
 	.top-line
 		display: flex
 		justify-content: space-between
@@ -13,6 +28,7 @@ header
 		&-left
 			display: flex
 			flex-direction: row
+			align-items: center
 			a
 				margin-right: gem(45)
 				&:hover
@@ -362,6 +378,8 @@ header
 		.categories-cat 
 			a
 				padding: 0 gem(15)
+	.form_header-title
+		
 	header .categories-cat-dropdown li a, header .categories-cat-dropdown li p
 		padding: gem(20) gem(0)
 

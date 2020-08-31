@@ -186,6 +186,170 @@
 		width: 100%
 		text-align: center
 		margin-bottom: gem(60)
+.new_card
+	width: gem(271)
+	height: gem(490)
+	display: flex
+	flex-direction: column
+	border: 1px solid #D0D0D0
+	background: #fff
+	justify-content: space-between
+	&-img
+		display: flex
+		width: 100%
+		height: gem(219)
+		padding: gem(6) gem(6) gem(0) gem(6)
+		background: #ffff
+		align-items: center
+		justify-content: center
+		a
+			height: 100%
+			img
+				height: 100%
+	&-name
+		display: flex
+		padding: gem(0) gem(20)
+		width: 100%
+		margin: gem(20) gem(0)
+		a
+			color: var(--colod-black)
+	&-rate
+		display: flex
+		flex-direction: row
+		padding: gem(0) gem(20)
+		margin-bottom: gem(20)
+		align-items: center
+		div:first-child
+			flex-direction: column
+			margin-right: gem(36)
+		div
+			display: flex
+			margin-right: gem(10)
+			img
+				width: gem(15)
+				height: gem(15)
+				margin: gem(0) gem(2.5)
+			img:first-child
+				margin-left: gem(0)
+			img:last-child
+				margin-right: gem(0)
+		span.desc-2
+			display: flex
+			font-size: gem(9)
+			line-height: gem(16)
+		.old_price
+			display: none
+			text-decoration: line-through var(--color-red)
+	&-price
+		display: flex
+		margin-bottom: gem(8)
+		flex-direction: row
+		justify-content: space-between
+		padding: gem(0) gem(20)
+		a
+			display: flex
+			font-size: gem(12)
+			line-height: gem(16)
+			text-decoration-line: underline
+			color: #FF671F
+		a:hover
+			text-decoration-line: none
+			transition: all 0.3s ease
+		div:first-child
+			display:flex
+			flex-direction: column
+			span
+				display: flex
+			p
+				span:first-child
+					text-decoration: line-through var(--color-red)
+				span:last-child
+					margin-left: gem(6)
+					font-size: gem(10)
+					text-decoration: none
+				&:last-child
+					span
+						text-decoration: none
+		div 
+			.desc-1
+				display: none
+			.title-h3
+				display: flex		
+		.new_card-check
+			display: flex
+			flex-direction: row !important
+			justify-content: center
+			align-items: center
+			img
+				display: flex
+				margin-right: gem(7)
+			span
+				display: flex
+				font-weight: 500
+	.new_card-check-none
+		display: none
+	&.inactive
+		.new_card-check
+			display: none
+		.new_card-check-none
+			display: flex
+			flex-direction: row
+			justify-content: center
+			align-items: center
+			img
+				display: flex
+				margin-right: gem(7)
+			span
+				display: flex
+				font-weight: 500
+		.new_card-price a
+			pointer-events: none
+
+	&-button
+		display: flex
+		flex-direction: row
+		height: gem(58)
+		cursor: pointer
+		img
+			width: gem(29)
+		div:first-child
+			display: flex
+			background: var(--color-orange)
+			width: gem(206)
+			justify-content: center
+			align-items: center
+			transition: all 0.3s ease
+			&:hover
+				background: var(--color-orange-light)
+			span
+				text-transform: uppercase
+		div:last-child
+			display: flex
+			background: var(--color-orange-light) center
+			width: gem(63)
+			justify-content: center
+	&-button-none
+		display: none
+	&.inactive
+		.new_card-price a
+			color: #7D7D7D
+		.new_card-button
+			display: none
+		.new_card-button-none
+			display: flex
+			height: gem(58)
+			cursor: pointer
+			div
+				display: flex
+				background: var(--color-dark-gray)
+				width: 100%
+				justify-content: center
+				align-items: center
+				span
+					text-transform: uppercase
+	&.sale
+		.old_price
+			display: flex
 
 @media all and (max-width: 1024px)
 	.carousel-section
