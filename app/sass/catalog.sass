@@ -24,7 +24,7 @@
 	&-products
 		display: flex
 		flex-wrap: wrap
-		.card
+		.card, .new_card
 			margin-left: gem(40)
 			margin-bottom: gem(40)
 .navigation
@@ -193,7 +193,7 @@
 			text-align: center
 	.catalog-products
 		margin-left: gem(83)
-		.card
+		.card, .new_card
 			margin-left: gem(20)
 
 @media only screen and (max-width : 1024px)
@@ -202,7 +202,7 @@
 	.catalog_main .carousel-section
 		margin-bottom: gem(110)
 		align-items: center
-	.catalog-products .card
+	.catalog-products .card, .catalog-products .new_card
 		margin-bottom: gem(50)
 
 @media all and (max-width: 480px)
@@ -211,11 +211,11 @@
 	.catalog-products
 		margin-left: gem(15)
 		width: gem(290)
-	.catalog-products .card
+	.catalog-products .card, .catalog-products .new_card
 		margin-bottom: gem(40)
 		margin-left: 0
 		width: gem(290)
-	.card-button
+	.card-button, .new_card-button
 		div:first-child
 			width: gem(217)
 		div:last-child
@@ -226,7 +226,7 @@
 		padding: 0
 		.owl-carousel .owl-nav
 			margin-right: gem(15)
-	.card
+	.card, .new_card
 		width: gem(290)
 	.navigation
 		h2, div
