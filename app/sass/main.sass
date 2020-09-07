@@ -160,6 +160,44 @@ button[type='submit']
         
     span
         color: var(--color-orange)
+.accordion
+    .sp-form
+        padding: 0
+        width: auto
+        line-height: unset
+        border: none
+        border-radius: unset
+        .sp-field
+            padding: 0
+            display: flex
+            flex-direction: column
+            // padding-left: gem(50)
+            input
+                padding-left: gem(60)
+                font-size: gem(14)
+                line-height: gem(14)
+        .sp-form-control
+            width: gem(307)
+            height: gem(50)
+            padding: 0
+            border-radius: gem(3)
+            font-size: gem(12)
+            line-height: gem(14)
+            color: #202020
+        .sp-button
+            height: gem(50)
+            text-transform: uppercase
+            
+            font-size: gem(18)
+            line-height: gem(21)
+            background: #FF671F
+            font-family: 'Roboto', sans-serif
+            font-weight: 500
+            &:hover
+                top: unset
+
+
+
 
 @media only screen and (max-width : 1024px)
     .s-hidden
